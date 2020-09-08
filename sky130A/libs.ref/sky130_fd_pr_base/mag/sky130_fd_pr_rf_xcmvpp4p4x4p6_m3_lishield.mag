@@ -1,0 +1,8 @@
+magic
+tech sky130A
+timestamp 1599587575
+<< properties >>
+string gencell sky130_fd_pr_rf_xcmvpp4p4x4p6_m3_lishield
+string parameter m=1
+string library sky130
+<< end >>

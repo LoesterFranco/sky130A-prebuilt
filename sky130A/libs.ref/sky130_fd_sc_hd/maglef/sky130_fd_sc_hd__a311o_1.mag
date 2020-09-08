@@ -1,0 +1,83 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1599588220
+<< locali >>
+rect 0 527 736 561
+rect 17 357 85 485
+rect 119 435 168 527
+rect 291 451 425 527
+rect 17 134 51 357
+rect 181 199 248 265
+rect 17 51 79 134
+rect 302 150 341 265
+rect 393 199 462 265
+rect 524 199 619 265
+rect 670 199 707 265
+rect 393 153 431 199
+rect 118 17 184 93
+rect 553 17 619 97
+rect 0 -17 736 17
+<< obsli1 >>
+rect 203 401 253 493
+rect 465 401 515 493
+rect 203 367 515 401
+rect 667 333 701 493
+rect 113 299 701 333
+rect 113 265 147 299
+rect 85 199 147 265
+rect 113 165 147 199
+rect 113 131 252 165
+rect 218 85 252 131
+rect 465 131 701 165
+rect 465 85 499 131
+rect 218 51 499 85
+rect 667 51 701 131
+<< metal1 >>
+rect 0 496 736 592
+rect 0 -48 736 48
+<< labels >>
+rlabel locali s 393 199 462 265 6 A1
+port 1 nsew signal input
+rlabel locali s 393 153 431 199 6 A1
+port 1 nsew signal input
+rlabel locali s 302 150 341 265 6 A2
+port 2 nsew signal input
+rlabel locali s 181 199 248 265 6 A3
+port 3 nsew signal input
+rlabel locali s 524 199 619 265 6 B1
+port 4 nsew signal input
+rlabel locali s 670 199 707 265 6 C1
+port 5 nsew signal input
+rlabel locali s 17 357 85 485 6 X
+port 6 nsew signal output
+rlabel locali s 17 134 51 357 6 X
+port 6 nsew signal output
+rlabel locali s 17 51 79 134 6 X
+port 6 nsew signal output
+rlabel locali s 553 17 619 97 6 VGND
+port 7 nsew ground bidirectional abutment
+rlabel locali s 118 17 184 93 6 VGND
+port 7 nsew ground bidirectional abutment
+rlabel locali s 0 -17 736 17 8 VGND
+port 7 nsew ground bidirectional abutment
+rlabel metal1 s 0 -48 736 48 8 VGND
+port 7 nsew ground bidirectional abutment
+rlabel locali s 291 451 425 527 6 VPWR
+port 8 nsew power bidirectional abutment
+rlabel locali s 119 435 168 527 6 VPWR
+port 8 nsew power bidirectional abutment
+rlabel locali s 0 527 736 561 6 VPWR
+port 8 nsew power bidirectional abutment
+rlabel metal1 s 0 496 736 592 6 VPWR
+port 8 nsew power bidirectional abutment
+<< properties >>
+string LEFsite unithd
+string LEFclass CORE
+string FIXED_BBOX 0 0 736 544
+string LEFsymmetry X Y R90
+string LEFview TRUE
+string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+string GDS_END 3511638
+string GDS_START 3505130
+<< end >>

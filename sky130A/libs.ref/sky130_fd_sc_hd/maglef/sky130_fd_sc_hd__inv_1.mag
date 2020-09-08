@@ -1,0 +1,47 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1599588220
+<< locali >>
+rect 0 527 276 561
+rect 68 299 110 527
+rect 144 297 210 493
+rect 64 215 130 263
+rect 64 17 110 181
+rect 164 177 210 297
+rect 144 51 210 177
+rect 0 -17 276 17
+<< metal1 >>
+rect 0 496 276 592
+rect 0 -48 276 48
+<< labels >>
+rlabel locali s 64 215 130 263 6 A
+port 1 nsew signal input
+rlabel locali s 164 177 210 297 6 Y
+port 2 nsew signal output
+rlabel locali s 144 297 210 493 6 Y
+port 2 nsew signal output
+rlabel locali s 144 51 210 177 6 Y
+port 2 nsew signal output
+rlabel locali s 64 17 110 181 6 VGND
+port 3 nsew ground bidirectional abutment
+rlabel locali s 0 -17 276 17 8 VGND
+port 3 nsew ground bidirectional abutment
+rlabel metal1 s 0 -48 276 48 8 VGND
+port 3 nsew ground bidirectional abutment
+rlabel locali s 68 299 110 527 6 VPWR
+port 4 nsew power bidirectional abutment
+rlabel locali s 0 527 276 561 6 VPWR
+port 4 nsew power bidirectional abutment
+rlabel metal1 s 0 496 276 592 6 VPWR
+port 4 nsew power bidirectional abutment
+<< properties >>
+string LEFsite unithd
+string LEFclass CORE
+string FIXED_BBOX 0 0 276 544
+string LEFsymmetry X Y R90
+string LEFview TRUE
+string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+string GDS_END 2148882
+string GDS_START 2145388
+<< end >>

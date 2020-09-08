@@ -1,0 +1,220 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1599588220
+<< locali >>
+rect 0 527 1104 561
+rect 119 367 153 527
+rect 287 367 321 527
+rect 371 323 405 493
+rect 439 367 505 527
+rect 539 323 573 493
+rect 607 367 673 527
+rect 707 323 741 493
+rect 775 367 841 527
+rect 875 323 909 493
+rect 371 289 909 323
+rect 943 297 1009 527
+rect 28 215 248 255
+rect 858 263 909 289
+rect 858 255 977 263
+rect 858 221 864 255
+rect 898 221 936 255
+rect 970 221 977 255
+rect 858 211 977 221
+rect 858 181 909 211
+rect 371 147 909 181
+rect 103 17 169 113
+rect 271 17 337 113
+rect 371 51 405 147
+rect 439 17 505 113
+rect 539 51 573 147
+rect 607 17 673 113
+rect 707 51 741 147
+rect 775 17 841 113
+rect 875 51 909 147
+rect 943 17 1009 177
+rect 0 -17 1104 17
+<< viali >>
+rect 864 221 898 255
+rect 936 221 970 255
+<< obsli1 >>
+rect 19 323 85 493
+rect 187 323 253 493
+rect 19 289 319 323
+rect 284 249 319 289
+rect 284 215 809 249
+rect 284 181 319 215
+rect 35 147 319 181
+rect 35 51 69 147
+rect 203 52 237 147
+<< metal1 >>
+rect 0 496 1104 592
+rect 693 261 821 264
+rect 693 255 982 261
+rect 693 253 864 255
+rect 693 223 710 253
+rect 740 223 774 253
+rect 804 223 864 253
+rect 693 221 864 223
+rect 898 221 936 255
+rect 970 221 982 255
+rect 693 215 982 221
+rect 693 212 821 215
+rect 0 -48 1104 48
+<< via1 >>
+rect 710 223 740 253
+rect 774 223 804 253
+<< metal2 >>
+rect 689 258 825 275
+rect 689 218 697 258
+rect 737 253 777 258
+rect 740 223 774 253
+rect 737 218 777 223
+rect 817 218 825 258
+rect 689 201 825 218
+<< via2 >>
+rect 697 253 737 258
+rect 777 253 817 258
+rect 697 223 710 253
+rect 710 223 737 253
+rect 777 223 804 253
+rect 804 223 817 253
+rect 697 218 737 223
+rect 777 218 817 223
+<< metal3 >>
+rect 679 258 835 271
+rect 679 218 697 258
+rect 737 218 777 258
+rect 817 218 835 258
+rect 679 205 835 218
+<< via3 >>
+rect 697 218 737 258
+rect 777 218 817 258
+<< metal4 >>
+rect 274 334 830 372
+rect 274 174 312 334
+rect 472 174 632 334
+rect 792 258 830 334
+rect 817 218 830 258
+rect 792 174 830 218
+rect 274 136 830 174
+<< via4 >>
+rect 312 174 472 334
+rect 632 258 792 334
+rect 632 218 697 258
+rect 697 218 737 258
+rect 737 218 777 258
+rect 777 218 792 258
+rect 632 174 792 218
+<< metal5 >>
+rect 250 334 854 432
+rect 250 174 312 334
+rect 472 174 632 334
+rect 792 174 854 334
+rect 250 112 854 174
+<< labels >>
+rlabel locali s 28 215 248 255 6 A
+port 1 nsew signal input
+rlabel locali s 875 323 909 493 6 X
+port 2 nsew signal output
+rlabel locali s 875 51 909 147 6 X
+port 2 nsew signal output
+rlabel locali s 858 263 909 289 6 X
+port 2 nsew signal output
+rlabel locali s 858 211 977 263 6 X
+port 2 nsew signal output
+rlabel locali s 858 181 909 211 6 X
+port 2 nsew signal output
+rlabel locali s 707 323 741 493 6 X
+port 2 nsew signal output
+rlabel locali s 707 51 741 147 6 X
+port 2 nsew signal output
+rlabel locali s 539 323 573 493 6 X
+port 2 nsew signal output
+rlabel locali s 539 51 573 147 6 X
+port 2 nsew signal output
+rlabel locali s 371 323 405 493 6 X
+port 2 nsew signal output
+rlabel locali s 371 289 909 323 6 X
+port 2 nsew signal output
+rlabel locali s 371 147 909 181 6 X
+port 2 nsew signal output
+rlabel locali s 371 51 405 147 6 X
+port 2 nsew signal output
+rlabel via4 s 632 174 792 334 6 X
+port 2 nsew signal output
+rlabel via4 s 312 174 472 334 6 X
+port 2 nsew signal output
+rlabel via3 s 777 218 817 258 6 X
+port 2 nsew signal output
+rlabel via3 s 697 218 737 258 6 X
+port 2 nsew signal output
+rlabel via2 s 777 218 817 258 6 X
+port 2 nsew signal output
+rlabel via2 s 697 218 737 258 6 X
+port 2 nsew signal output
+rlabel via1 s 774 223 804 253 6 X
+port 2 nsew signal output
+rlabel via1 s 710 223 740 253 6 X
+port 2 nsew signal output
+rlabel viali s 936 221 970 255 6 X
+port 2 nsew signal output
+rlabel viali s 864 221 898 255 6 X
+port 2 nsew signal output
+rlabel metal1 s 693 261 821 264 6 X
+port 2 nsew signal output
+rlabel metal1 s 693 215 982 261 6 X
+port 2 nsew signal output
+rlabel metal1 s 693 212 821 215 6 X
+port 2 nsew signal output
+rlabel metal2 s 689 201 825 275 6 X
+port 2 nsew signal output
+rlabel metal3 s 679 205 835 271 6 X
+port 2 nsew signal output
+rlabel metal4 s 274 136 830 372 6 X
+port 2 nsew signal output
+rlabel metal5 s 250 112 854 432 6 X
+port 2 nsew signal output
+rlabel locali s 943 17 1009 177 6 VGND
+port 3 nsew ground bidirectional abutment
+rlabel locali s 775 17 841 113 6 VGND
+port 3 nsew ground bidirectional abutment
+rlabel locali s 607 17 673 113 6 VGND
+port 3 nsew ground bidirectional abutment
+rlabel locali s 439 17 505 113 6 VGND
+port 3 nsew ground bidirectional abutment
+rlabel locali s 271 17 337 113 6 VGND
+port 3 nsew ground bidirectional abutment
+rlabel locali s 103 17 169 113 6 VGND
+port 3 nsew ground bidirectional abutment
+rlabel locali s 0 -17 1104 17 8 VGND
+port 3 nsew ground bidirectional abutment
+rlabel metal1 s 0 -48 1104 48 8 VGND
+port 3 nsew ground bidirectional abutment
+rlabel locali s 943 297 1009 527 6 VPWR
+port 4 nsew power bidirectional abutment
+rlabel locali s 775 367 841 527 6 VPWR
+port 4 nsew power bidirectional abutment
+rlabel locali s 607 367 673 527 6 VPWR
+port 4 nsew power bidirectional abutment
+rlabel locali s 439 367 505 527 6 VPWR
+port 4 nsew power bidirectional abutment
+rlabel locali s 287 367 321 527 6 VPWR
+port 4 nsew power bidirectional abutment
+rlabel locali s 119 367 153 527 6 VPWR
+port 4 nsew power bidirectional abutment
+rlabel locali s 0 527 1104 561 6 VPWR
+port 4 nsew power bidirectional abutment
+rlabel metal1 s 0 496 1104 592 6 VPWR
+port 4 nsew power bidirectional abutment
+<< properties >>
+string LEFsite unithd
+string LEFclass CORE
+string FIXED_BBOX 0 0 1104 544
+string LEFsymmetry X Y R90
+string LEFview TRUE
+string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+string GDS_END 18906
+string GDS_START 8946
+<< end >>

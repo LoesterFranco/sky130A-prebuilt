@@ -1,0 +1,14 @@
+magic
+tech sky130A
+timestamp 0
+<< properties >>
+string LEFsite unithd
+string LEFclass CORE WELLTAP
+string FIXED_BBOX 0 0 46 272
+string LEFsymmetry X Y R90
+string LEFproperties maskLayoutSubType "abstract" prCellType "standard" originalViewName "layout"
+string LEFview TRUE
+string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hdll/gds/sky130_fd_sc_hdll.gds
+string GDS_END 953976
+string GDS_START 952104
+<< end >>

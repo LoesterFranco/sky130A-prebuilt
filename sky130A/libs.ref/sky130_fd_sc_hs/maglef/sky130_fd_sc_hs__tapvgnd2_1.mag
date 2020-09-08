@@ -1,0 +1,51 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1599588232
+<< obsli1 >>
+rect 0 649 31 683
+rect 65 649 96 683
+rect 18 498 78 613
+rect 18 464 31 498
+rect 65 464 78 498
+rect 18 378 78 464
+rect 18 17 78 288
+rect 0 -17 31 17
+rect 65 -17 96 17
+<< obsli1c >>
+rect 31 649 65 683
+rect 31 464 65 498
+rect 31 -17 65 17
+<< metal1 >>
+rect 0 683 96 715
+rect 0 649 31 683
+rect 65 649 96 683
+rect 0 617 96 649
+rect 0 616 50 617
+rect 16 498 80 507
+rect 16 464 31 498
+rect 65 464 80 498
+rect 16 455 80 464
+rect 0 17 96 49
+rect 0 -17 31 17
+rect 65 -17 96 17
+rect 0 -49 96 -17
+<< labels >>
+rlabel metal1 s 0 -49 96 49 8 VGND
+port 1 nsew ground bidirectional
+rlabel metal1 s 0 616 50 666 6 VPB
+port 2 nsew power bidirectional
+rlabel metal1 s 16 455 80 507 6 VPB
+port 2 nsew power bidirectional
+rlabel metal1 s 0 617 96 715 6 VPWR
+port 3 nsew power bidirectional
+<< properties >>
+string LEFsite unit
+string LEFclass CORE WELLTAP
+string FIXED_BBOX 0 0 96 666
+string LEFsymmetry X Y
+string LEFview TRUE
+string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hs/gds/sky130_fd_sc_hs.gds
+string GDS_END 467888
+string GDS_START 465984
+<< end >>

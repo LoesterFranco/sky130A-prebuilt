@@ -1,0 +1,77 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1599588227
+<< locali >>
+rect 17 312 71 493
+rect 17 152 51 312
+rect 273 197 349 271
+rect 17 51 69 152
+<< obsli1 >>
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 213 561
+rect 247 527 305 561
+rect 339 527 368 561
+rect 105 375 255 527
+rect 299 341 333 493
+rect 108 307 333 341
+rect 108 278 152 307
+rect 85 212 152 278
+rect 108 161 152 212
+rect 108 127 325 161
+rect 105 17 255 93
+rect 291 51 325 127
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 213 17
+rect 247 -17 305 17
+rect 339 -17 368 17
+<< obsli1c >>
+rect 29 527 63 561
+rect 121 527 155 561
+rect 213 527 247 561
+rect 305 527 339 561
+rect 29 -17 63 17
+rect 121 -17 155 17
+rect 213 -17 247 17
+rect 305 -17 339 17
+<< metal1 >>
+rect 0 561 368 592
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 213 561
+rect 247 527 305 561
+rect 339 527 368 561
+rect 0 496 368 527
+rect 0 17 368 48
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 213 17
+rect 247 -17 305 17
+rect 339 -17 368 17
+rect 0 -48 368 -17
+<< labels >>
+rlabel locali s 273 197 349 271 6 A
+port 1 nsew signal input
+rlabel locali s 17 312 71 493 6 X
+port 2 nsew signal output
+rlabel locali s 17 152 51 312 6 X
+port 2 nsew signal output
+rlabel locali s 17 51 69 152 6 X
+port 2 nsew signal output
+rlabel metal1 s 0 -48 368 48 8 VGND
+port 3 nsew ground bidirectional
+rlabel metal1 s 0 496 368 592 6 VPWR
+port 4 nsew power bidirectional
+<< properties >>
+string LEFsite unithd
+string LEFclass CORE
+string FIXED_BBOX 0 0 368 544
+string LEFsymmetry X Y R90
+string LEFproperties maskLayoutSubType "abstract" prCellType "standard" originalViewName "layout"
+string LEFview TRUE
+string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hdll/gds/sky130_fd_sc_hdll.gds
+string GDS_END 1747334
+string GDS_START 1743232
+<< end >>

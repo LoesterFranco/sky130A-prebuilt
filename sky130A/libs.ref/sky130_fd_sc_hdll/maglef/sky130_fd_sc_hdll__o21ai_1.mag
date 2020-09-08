@@ -1,0 +1,92 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1599588227
+<< locali >>
+rect 116 265 167 475
+rect 201 301 283 493
+rect 29 199 82 265
+rect 116 199 215 265
+rect 249 225 283 301
+rect 331 259 443 331
+rect 249 191 422 225
+rect 329 55 422 191
+<< obsli1 >>
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 213 561
+rect 247 527 305 561
+rect 339 527 397 561
+rect 431 527 460 561
+rect 18 299 82 527
+rect 329 367 422 527
+rect 18 123 281 157
+rect 18 53 76 123
+rect 125 17 201 89
+rect 235 62 281 123
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 213 17
+rect 247 -17 305 17
+rect 339 -17 397 17
+rect 431 -17 460 17
+<< obsli1c >>
+rect 29 527 63 561
+rect 121 527 155 561
+rect 213 527 247 561
+rect 305 527 339 561
+rect 397 527 431 561
+rect 29 -17 63 17
+rect 121 -17 155 17
+rect 213 -17 247 17
+rect 305 -17 339 17
+rect 397 -17 431 17
+<< metal1 >>
+rect 0 561 460 592
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 213 561
+rect 247 527 305 561
+rect 339 527 397 561
+rect 431 527 460 561
+rect 0 496 460 527
+rect 0 17 460 48
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 213 17
+rect 247 -17 305 17
+rect 339 -17 397 17
+rect 431 -17 460 17
+rect 0 -48 460 -17
+<< labels >>
+rlabel locali s 29 199 82 265 6 A1
+port 1 nsew signal input
+rlabel locali s 116 265 167 475 6 A2
+port 2 nsew signal input
+rlabel locali s 116 199 215 265 6 A2
+port 2 nsew signal input
+rlabel locali s 331 259 443 331 6 B1
+port 3 nsew signal input
+rlabel locali s 329 55 422 191 6 Y
+port 4 nsew signal output
+rlabel locali s 249 225 283 301 6 Y
+port 4 nsew signal output
+rlabel locali s 249 191 422 225 6 Y
+port 4 nsew signal output
+rlabel locali s 201 301 283 493 6 Y
+port 4 nsew signal output
+rlabel metal1 s 0 -48 460 48 8 VGND
+port 5 nsew ground bidirectional
+rlabel metal1 s 0 496 460 592 6 VPWR
+port 6 nsew power bidirectional
+<< properties >>
+string LEFsite unithd
+string LEFclass CORE
+string FIXED_BBOX 0 0 460 544
+string LEFsymmetry X Y R90
+string LEFproperties maskLayoutSubType "abstract" prCellType "standard" originalViewName "layout"
+string LEFview TRUE
+string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hdll/gds/sky130_fd_sc_hdll.gds
+string GDS_END 1014490
+string GDS_START 1009516
+<< end >>

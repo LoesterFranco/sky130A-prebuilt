@@ -1,0 +1,89 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1599588238
+<< locali >>
+rect 145 390 309 596
+rect 25 236 111 310
+rect 145 236 179 390
+rect 213 270 279 356
+rect 313 270 455 356
+rect 145 202 457 236
+rect 391 70 457 202
+<< obsli1 >>
+rect 0 649 31 683
+rect 65 649 127 683
+rect 161 649 223 683
+rect 257 649 319 683
+rect 353 649 415 683
+rect 449 649 480 683
+rect 61 364 111 649
+rect 374 390 440 649
+rect 23 168 89 202
+rect 23 134 357 168
+rect 23 70 84 134
+rect 121 17 259 100
+rect 296 70 357 134
+rect 0 -17 31 17
+rect 65 -17 127 17
+rect 161 -17 223 17
+rect 257 -17 319 17
+rect 353 -17 415 17
+rect 449 -17 480 17
+<< obsli1c >>
+rect 31 649 65 683
+rect 127 649 161 683
+rect 223 649 257 683
+rect 319 649 353 683
+rect 415 649 449 683
+rect 31 -17 65 17
+rect 127 -17 161 17
+rect 223 -17 257 17
+rect 319 -17 353 17
+rect 415 -17 449 17
+<< metal1 >>
+rect 0 683 480 715
+rect 0 649 31 683
+rect 65 649 127 683
+rect 161 649 223 683
+rect 257 649 319 683
+rect 353 649 415 683
+rect 449 649 480 683
+rect 0 617 480 649
+rect 0 17 480 49
+rect 0 -17 31 17
+rect 65 -17 127 17
+rect 161 -17 223 17
+rect 257 -17 319 17
+rect 353 -17 415 17
+rect 449 -17 480 17
+rect 0 -49 480 -17
+<< labels >>
+rlabel locali s 25 236 111 310 6 A1
+port 1 nsew signal input
+rlabel locali s 213 270 279 356 6 A2
+port 2 nsew signal input
+rlabel locali s 313 270 455 356 6 B1
+port 3 nsew signal input
+rlabel locali s 391 70 457 202 6 Y
+port 4 nsew signal output
+rlabel locali s 145 390 309 596 6 Y
+port 4 nsew signal output
+rlabel locali s 145 236 179 390 6 Y
+port 4 nsew signal output
+rlabel locali s 145 202 457 236 6 Y
+port 4 nsew signal output
+rlabel metal1 s 0 -49 480 49 8 VGND
+port 5 nsew ground bidirectional abutment
+rlabel metal1 s 0 617 480 715 6 VPWR
+port 6 nsew power bidirectional abutment
+<< properties >>
+string LEFsite unit
+string LEFclass CORE
+string FIXED_BBOX 0 0 480 666
+string LEFsymmetry X Y
+string LEFview TRUE
+string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_ls/gds/sky130_fd_sc_ls.gds
+string GDS_END 1358702
+string GDS_START 1353676
+<< end >>

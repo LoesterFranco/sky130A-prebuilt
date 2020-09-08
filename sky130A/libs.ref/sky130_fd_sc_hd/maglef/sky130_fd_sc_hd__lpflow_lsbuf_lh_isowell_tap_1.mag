@@ -1,0 +1,134 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1599588220
+<< locali >>
+rect 0 1071 1288 1105
+rect 17 926 75 1071
+rect 529 903 581 1071
+rect 715 903 753 1071
+rect 889 903 991 1071
+rect 1173 926 1231 1071
+rect 0 527 378 561
+rect 412 532 562 750
+rect 412 467 478 532
+rect 276 413 478 467
+rect 412 327 478 413
+rect 17 17 75 162
+rect 404 17 470 179
+rect 594 214 658 308
+rect 978 561 1024 748
+rect 978 527 1288 561
+rect 978 325 1024 527
+rect 1072 196 1127 474
+rect 623 17 689 180
+rect 795 17 861 112
+rect 967 17 1033 180
+rect 1067 58 1127 196
+rect 1173 17 1231 162
+rect 0 -17 1288 17
+<< obsli1 >>
+rect 615 865 681 1037
+rect 787 865 853 1037
+rect 1027 964 1097 1032
+rect 1027 892 1139 964
+rect 1027 881 1153 892
+rect 615 853 853 865
+rect 1072 871 1153 881
+rect 629 831 839 853
+rect 612 474 678 793
+rect 804 762 838 831
+rect 1072 825 1217 871
+rect 882 728 944 748
+rect 736 694 944 728
+rect 736 515 770 694
+rect 804 583 838 660
+rect 878 617 944 694
+rect 804 549 928 583
+rect 736 481 838 515
+rect 512 426 678 474
+rect 512 75 560 426
+rect 804 196 838 481
+rect 894 325 928 549
+rect 1072 614 1110 825
+rect 723 146 933 196
+rect 723 58 761 146
+rect 895 58 933 146
+<< metal1 >>
+rect 0 1040 1288 1136
+rect 0 496 1288 592
+rect 272 456 474 463
+rect 14 428 1234 456
+rect 272 417 474 428
+rect 0 -48 1288 48
+<< labels >>
+rlabel locali s 594 214 658 308 6 A
+port 1 nsew signal input
+rlabel locali s 1072 196 1127 474 6 X
+port 2 nsew signal output
+rlabel locali s 1067 58 1127 196 6 X
+port 2 nsew signal output
+rlabel locali s 412 532 562 750 6 LOWLVPWR
+port 3 nsew power bidirectional abutment
+rlabel locali s 412 467 478 532 6 LOWLVPWR
+port 3 nsew power bidirectional abutment
+rlabel locali s 412 327 478 413 6 LOWLVPWR
+port 3 nsew power bidirectional abutment
+rlabel locali s 276 413 478 467 6 LOWLVPWR
+port 3 nsew power bidirectional abutment
+rlabel metal1 s 272 456 474 463 6 LOWLVPWR
+port 3 nsew power bidirectional abutment
+rlabel metal1 s 272 417 474 428 6 LOWLVPWR
+port 3 nsew power bidirectional abutment
+rlabel metal1 s 14 428 1234 456 6 LOWLVPWR
+port 3 nsew power bidirectional abutment
+rlabel locali s 1173 17 1231 162 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 967 17 1033 180 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 795 17 861 112 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 623 17 689 180 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 404 17 470 179 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 17 17 75 162 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 0 -17 1288 17 8 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 1173 926 1231 1071 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 889 903 991 1071 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 715 903 753 1071 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 529 903 581 1071 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 17 926 75 1071 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 0 1071 1288 1105 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel metal1 s 0 -48 1288 48 8 VGND
+port 4 nsew ground bidirectional abutment
+rlabel metal1 s 0 1040 1288 1136 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 0 527 378 561 6 VPWR
+port 5 nsew power bidirectional abutment
+rlabel locali s 978 561 1024 748 6 VPWR
+port 5 nsew power bidirectional abutment
+rlabel locali s 978 527 1288 561 6 VPWR
+port 5 nsew power bidirectional abutment
+rlabel locali s 978 325 1024 527 6 VPWR
+port 5 nsew power bidirectional abutment
+rlabel metal1 s 0 496 1288 592 6 VPWR
+port 5 nsew power bidirectional abutment
+<< properties >>
+string LEFsite unithd
+string LEFclass CORE WELLTAP
+string FIXED_BBOX 0 0 1288 1088
+string LEFsymmetry X Y R90
+string LEFview TRUE
+string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+string GDS_END 1567068
+string GDS_START 1553826
+<< end >>

@@ -1,0 +1,70 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1599588220
+<< locali >>
+rect 0 527 552 561
+rect 57 393 113 527
+rect 17 265 80 353
+rect 249 383 315 527
+rect 353 383 443 493
+rect 17 215 155 265
+rect 201 215 267 265
+rect 393 109 443 383
+rect 477 299 535 527
+rect 249 17 299 109
+rect 333 51 443 109
+rect 477 17 535 177
+rect 0 -17 552 17
+<< obsli1 >>
+rect 147 349 207 459
+rect 147 315 335 349
+rect 301 265 335 315
+rect 301 199 359 265
+rect 301 181 335 199
+rect 57 143 335 181
+rect 57 71 123 143
+<< metal1 >>
+rect 0 496 552 592
+rect 0 -48 552 48
+<< labels >>
+rlabel locali s 17 265 80 353 6 A
+port 1 nsew signal input
+rlabel locali s 17 215 155 265 6 A
+port 1 nsew signal input
+rlabel locali s 201 215 267 265 6 B
+port 2 nsew signal input
+rlabel locali s 393 109 443 383 6 X
+port 3 nsew signal output
+rlabel locali s 353 383 443 493 6 X
+port 3 nsew signal output
+rlabel locali s 333 51 443 109 6 X
+port 3 nsew signal output
+rlabel locali s 477 17 535 177 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 249 17 299 109 6 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 0 -17 552 17 8 VGND
+port 4 nsew ground bidirectional abutment
+rlabel metal1 s 0 -48 552 48 8 VGND
+port 4 nsew ground bidirectional abutment
+rlabel locali s 477 299 535 527 6 VPWR
+port 5 nsew power bidirectional abutment
+rlabel locali s 249 383 315 527 6 VPWR
+port 5 nsew power bidirectional abutment
+rlabel locali s 57 393 113 527 6 VPWR
+port 5 nsew power bidirectional abutment
+rlabel locali s 0 527 552 561 6 VPWR
+port 5 nsew power bidirectional abutment
+rlabel metal1 s 0 496 552 592 6 VPWR
+port 5 nsew power bidirectional abutment
+<< properties >>
+string LEFsite unithd
+string LEFclass CORE
+string FIXED_BBOX 0 0 552 544
+string LEFsymmetry X Y R90
+string LEFview TRUE
+string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+string GDS_END 3751978
+string GDS_START 3746592
+<< end >>

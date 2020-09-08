@@ -1,0 +1,84 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1599588220
+<< locali >>
+rect 0 527 828 561
+rect 119 367 185 527
+rect 224 333 290 493
+rect 328 367 394 527
+rect 428 333 494 493
+rect 536 435 690 527
+rect 86 215 156 331
+rect 224 299 534 333
+rect 194 215 264 265
+rect 300 147 344 265
+rect 119 17 180 109
+rect 484 165 534 299
+rect 484 51 586 165
+rect 678 145 728 323
+rect 620 17 690 109
+rect 0 -17 828 17
+<< obsli1 >>
+rect 17 413 85 493
+rect 17 181 52 413
+rect 727 401 811 493
+rect 568 367 811 401
+rect 17 143 254 181
+rect 17 97 85 143
+rect 216 111 254 143
+rect 394 111 450 265
+rect 216 73 450 111
+rect 568 199 618 367
+rect 762 109 811 367
+rect 724 51 811 109
+<< metal1 >>
+rect 0 496 828 592
+rect 0 -48 828 48
+<< labels >>
+rlabel locali s 678 145 728 323 6 A_N
+port 1 nsew signal input
+rlabel locali s 86 215 156 331 6 B_N
+port 2 nsew signal input
+rlabel locali s 300 147 344 265 6 C
+port 3 nsew signal input
+rlabel locali s 194 215 264 265 6 D
+port 4 nsew signal input
+rlabel locali s 484 165 534 299 6 Y
+port 5 nsew signal output
+rlabel locali s 484 51 586 165 6 Y
+port 5 nsew signal output
+rlabel locali s 428 333 494 493 6 Y
+port 5 nsew signal output
+rlabel locali s 224 333 290 493 6 Y
+port 5 nsew signal output
+rlabel locali s 224 299 534 333 6 Y
+port 5 nsew signal output
+rlabel locali s 620 17 690 109 6 VGND
+port 6 nsew ground bidirectional abutment
+rlabel locali s 119 17 180 109 6 VGND
+port 6 nsew ground bidirectional abutment
+rlabel locali s 0 -17 828 17 8 VGND
+port 6 nsew ground bidirectional abutment
+rlabel metal1 s 0 -48 828 48 8 VGND
+port 6 nsew ground bidirectional abutment
+rlabel locali s 536 435 690 527 6 VPWR
+port 7 nsew power bidirectional abutment
+rlabel locali s 328 367 394 527 6 VPWR
+port 7 nsew power bidirectional abutment
+rlabel locali s 119 367 185 527 6 VPWR
+port 7 nsew power bidirectional abutment
+rlabel locali s 0 527 828 561 6 VPWR
+port 7 nsew power bidirectional abutment
+rlabel metal1 s 0 496 828 592 6 VPWR
+port 7 nsew power bidirectional abutment
+<< properties >>
+string LEFsite unithd
+string LEFclass CORE
+string FIXED_BBOX 0 0 828 544
+string LEFsymmetry X Y R90
+string LEFview TRUE
+string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+string GDS_END 1901808
+string GDS_START 1894652
+<< end >>

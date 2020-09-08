@@ -1,0 +1,102 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1599588238
+<< locali >>
+rect 107 418 163 596
+rect 293 418 359 596
+rect 107 384 359 418
+rect 107 230 141 384
+rect 107 196 350 230
+rect 411 216 491 282
+rect 112 70 178 196
+rect 284 70 350 196
+<< obsli1 >>
+rect 0 649 31 683
+rect 65 649 127 683
+rect 161 649 223 683
+rect 257 649 319 683
+rect 353 649 415 683
+rect 449 649 511 683
+rect 545 649 576 683
+rect 23 364 73 649
+rect 203 452 253 649
+rect 399 384 449 649
+rect 483 350 559 596
+rect 175 316 559 350
+rect 175 270 377 316
+rect 26 17 76 162
+rect 214 17 248 162
+rect 525 162 559 316
+rect 384 17 450 162
+rect 484 96 559 162
+rect 0 -17 31 17
+rect 65 -17 127 17
+rect 161 -17 223 17
+rect 257 -17 319 17
+rect 353 -17 415 17
+rect 449 -17 511 17
+rect 545 -17 576 17
+<< obsli1c >>
+rect 31 649 65 683
+rect 127 649 161 683
+rect 223 649 257 683
+rect 319 649 353 683
+rect 415 649 449 683
+rect 511 649 545 683
+rect 31 -17 65 17
+rect 127 -17 161 17
+rect 223 -17 257 17
+rect 319 -17 353 17
+rect 415 -17 449 17
+rect 511 -17 545 17
+<< metal1 >>
+rect 0 683 576 715
+rect 0 649 31 683
+rect 65 649 127 683
+rect 161 649 223 683
+rect 257 649 319 683
+rect 353 649 415 683
+rect 449 649 511 683
+rect 545 649 576 683
+rect 0 617 576 649
+rect 0 17 576 49
+rect 0 -17 31 17
+rect 65 -17 127 17
+rect 161 -17 223 17
+rect 257 -17 319 17
+rect 353 -17 415 17
+rect 449 -17 511 17
+rect 545 -17 576 17
+rect 0 -49 576 -17
+<< labels >>
+rlabel locali s 411 216 491 282 6 A
+port 1 nsew signal input
+rlabel locali s 293 418 359 596 6 X
+port 2 nsew signal output
+rlabel locali s 284 70 350 196 6 X
+port 2 nsew signal output
+rlabel locali s 112 70 178 196 6 X
+port 2 nsew signal output
+rlabel locali s 107 418 163 596 6 X
+port 2 nsew signal output
+rlabel locali s 107 384 359 418 6 X
+port 2 nsew signal output
+rlabel locali s 107 230 141 384 6 X
+port 2 nsew signal output
+rlabel locali s 107 196 350 230 6 X
+port 2 nsew signal output
+rlabel metal1 s 0 -49 576 49 8 VGND
+port 3 nsew ground bidirectional abutment
+rlabel metal1 s 0 617 576 715 6 VPWR
+port 4 nsew power bidirectional abutment
+<< properties >>
+string LEFsite unit
+string LEFclass CORE
+string FIXED_BBOX 0 0 576 666
+string LEFsymmetry X Y
+string LEFview TRUE
+string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_ls/gds/sky130_fd_sc_ls.gds
+string GDS_END 3410706
+string GDS_START 3405210
+<< end >>
