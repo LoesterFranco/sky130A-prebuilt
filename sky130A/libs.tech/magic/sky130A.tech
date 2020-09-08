@@ -3214,8 +3214,6 @@ style  sky130
  calma FILLOBSM3  107 24
  calma FILLOBSM4  112 4
 
-end
-
 #-----------------------------------------------------------------------
 
 style  vendorimport
