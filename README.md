@@ -16,3 +16,12 @@ You should create a symbolic link from this folder to /pdk
     export PDK_ROOT=/pdk
 ```
 Then use `$PDK_ROOT` as the absolute path where the pdk resides.
+
+
+# Recreating the PDK:
+
+To recreate the PDK, run:
+
+```bash
+make
+```
