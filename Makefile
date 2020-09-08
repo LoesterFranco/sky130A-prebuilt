@@ -1,4 +1,4 @@
-PDK_ROOT ?= /pdk
+PDK_ROOT ?= /pdks
 THREADS ?= 8
 STD_CELL_LIBRARY ?= sky130_fd_sc_hd
 
