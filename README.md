@@ -11,8 +11,8 @@ This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/
 
 You should create a symbolic link from this folder to /pdk
 ```bash
-    export $PDK_BASE==<absolute path to this repo local path>
+    export PDK_BASE==<absolute path to this repo local path>
     ln -s $PDK_BASE /pdk
-    export $PDK_ROOT=/pdk
+    export PDK_ROOT=/pdk
 ```
 Then use `$PDK_ROOT` as the absolute path where the pdk resides.
