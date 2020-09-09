@@ -13,7 +13,7 @@
 # limitations under the License.
 MAKE_ROOT ?= $(shell pwd)
 PDK_ROOT ?= /pdks
-THREADS ?= 8
+THREADS ?= $(shell nproc)
 STD_CELL_LIBRARY ?= sky130_fd_sc_hd
 
 SKYWATER_COMMIT ?= 8de719a7bb445bf56a6f1fe11db162ccc783f37d
