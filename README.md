@@ -33,4 +33,4 @@ make
 # Prerequisites to recreate:
 
  - python3
- - Magic VLSI Layout
+ - [magic](https://github.com/RTimothyEdwards/magic) - At least version 8.3.25 is required
