@@ -1,5 +1,6 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
 
+
 # Sources:
 
 This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/skywater-pdk) using [open_pdks](https://github.com/RTimothyEdwards/open_pdks), mainly for the use of [OpenLANE](https://github.com/efabless/openlane/tree/master).
@@ -28,3 +29,8 @@ ln -s $PDK_BASE /pdks
 export PDK_ROOT=/pdks
 make
 ```
+
+# Prerequisites to recreate:
+
+ - python3
+ - Magic VLSI Layout
