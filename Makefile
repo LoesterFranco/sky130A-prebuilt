@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 MAKE_ROOT ?= $(shell pwd)
+PDK_BASE ?= $(shell pwd)
 PDK_ROOT ?= /pdks
 THREADS ?= $(shell nproc)
 STD_CELL_LIBRARY ?= sky130_fd_sc_hd
@@ -23,9 +24,11 @@ OPEN_PDKS_COMMIT ?= 52f78fa08f91503e0cff238979db4589e6187fdf
 
 .PHONY: all
 
-all: pdk
+all: pdk-link
 
-pdk: skywater-pdk open_pdks clear
+pdk-link: link pdk-local
+
+pdk-local: clean skywater-pdk open_pdks add-license clear
 
 skywater-pdk: clone-skywater-pdk all-skywater-libraries
 
@@ -60,7 +63,7 @@ clone-open_pdks: check-env
 		rm -rf open_pdks && \
 		git clone https://github.com/RTimothyEdwards/open_pdks.git open_pdks && \
 		cd open_pdks && \
-	    git checkout -qf $(OPEN_PDKS_COMMIT) && \
+	    	git checkout -qf $(OPEN_PDKS_COMMIT) && \
 		cd $(MAKE_ROOT) && \
 		python3 autoCommitUpdate.py -o $(OPEN_PDKS_COMMIT) -m $(MAKE_ROOT)/Makefile -r $(MAKE_ROOT)/README.md
 	
@@ -76,6 +79,11 @@ update-commits:
 	cd $(MAKE_ROOT) && \
 		python3 autoCommitUpdate.py -s $(SKYWATER_COMMIT) -o $(OPEN_PDKS_COMMIT) -m $(MAKE_ROOT)/Makefile -r $(MAKE_ROOT)/README.md
 
+link: check-env
+	 ln -s $(PDK_BASE) $(PDK_ROOT)
+
+add-license: check-env
+	sh addLicense.sh $(PDK_BASE) $(PDK_ROOT)
 
 clear: check-env
 	cd $(PDK_ROOT) && \

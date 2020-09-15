@@ -12,9 +12,7 @@ This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/
 
 You should create a symbolic link from this folder to /pdk
 ```bash
-    export PDK_BASE==<absolute path to this repo local path>
-    ln -s $PDK_BASE /pdks
-    export PDK_ROOT=/pdks
+	make link
 ```
 Then use `$PDK_ROOT` as the absolute path where the pdk resides.
 
@@ -24,10 +22,7 @@ Then use `$PDK_ROOT` as the absolute path where the pdk resides.
 To recreate the PDK, run:
 
 ```bash
-export PDK_BASE==<absolute path to this repo local path>
-ln -s $PDK_BASE /pdks
-export PDK_ROOT=/pdks
-make
+	make
 ```
 
 # Prerequisites to recreate:
