@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1599588232
+timestamp 1601050075
 << locali >>
 rect 85 196 167 398
 rect 313 290 381 356
@@ -66,9 +66,7 @@ rect 433 458 709 492
 rect 201 390 527 424
 rect 201 256 267 390
 rect 461 303 527 390
-rect 575 350 641 369
-rect 575 316 607 350
-rect 575 303 641 316
+rect 575 303 641 369
 rect 675 269 709 458
 rect 201 222 402 256
 rect 17 84 116 146
@@ -148,7 +146,6 @@ rect 2510 294 2597 360
 rect 2631 343 2773 377
 rect 2895 360 3047 411
 rect 2739 326 2773 343
-rect 2933 350 3047 360
 rect 2639 260 2705 309
 rect 1913 170 2172 204
 rect 1913 85 1947 170
@@ -158,9 +155,7 @@ rect 2138 85 2172 170
 rect 2206 119 2240 238
 rect 2416 226 2705 260
 rect 2739 260 2899 326
-rect 2933 316 3007 350
-rect 3041 316 3047 350
-rect 2933 310 3047 316
+rect 2933 310 3047 360
 rect 2416 204 2450 226
 rect 2274 170 2450 204
 rect 2739 188 2773 260
@@ -253,8 +248,6 @@ rect 3103 649 3137 683
 rect 3199 649 3233 683
 rect 3295 649 3329 683
 rect 3391 649 3425 683
-rect 607 316 641 350
-rect 3007 316 3041 350
 rect 31 -17 65 17
 rect 127 -17 161 17
 rect 223 -17 257 17
@@ -331,8 +324,6 @@ rect 3233 649 3295 683
 rect 3329 649 3391 683
 rect 3425 649 3456 683
 rect 0 617 3456 649
-rect 0 616 50 617
-rect 0 49 50 50
 rect 0 17 3456 49
 rect 0 -17 31 17
 rect 65 -17 127 17
@@ -373,17 +364,11 @@ rect 3329 -17 3391 17
 rect 3425 -17 3456 17
 rect 0 -49 3456 -17
 << obsm1 >>
-rect 595 350 653 356
-rect 595 316 607 350
-rect 641 347 653 350
-rect 2995 350 3053 356
-rect 2995 347 3007 350
-rect 641 319 3007 347
-rect 641 316 653 319
-rect 595 310 653 316
-rect 2995 316 3007 319
-rect 3041 316 3053 350
-rect 2995 310 3053 316
+rect 595 347 653 356
+rect 2995 347 3053 356
+rect 595 319 3053 347
+rect 595 310 653 319
+rect 2995 310 3053 319
 << labels >>
 rlabel locali s 85 196 167 398 6 D
 port 1 nsew signal input
@@ -409,12 +394,8 @@ rlabel locali s 1341 236 1409 310 6 CLK
 port 7 nsew clock input
 rlabel metal1 s 0 -49 3456 49 8 VGND
 port 8 nsew ground bidirectional
-rlabel metal1 s 0 0 50 50 6 VNB
-port 9 nsew ground bidirectional
-rlabel metal1 s 0 616 50 666 6 VPB
-port 10 nsew power bidirectional
 rlabel metal1 s 0 617 3456 715 6 VPWR
-port 11 nsew power bidirectional
+port 9 nsew power bidirectional
 << properties >>
 string LEFsite unit
 string LEFclass CORE

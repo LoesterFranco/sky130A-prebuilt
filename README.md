@@ -5,8 +5,8 @@
 
 This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/skywater-pdk) using [open_pdks](https://github.com/RTimothyEdwards/open_pdks), mainly for the use of [OpenLANE](https://github.com/efabless/openlane/tree/master).
 
-- The used commit from skywater-pdk is [8de719a7bb445bf56a6f1fe11db162ccc783f37d](https://github.com/google/skywater-pdk/commit/8de719a7bb445bf56a6f1fe11db162ccc783f37d)
-- The used commit from open_pdks is [52f78fa08f91503e0cff238979db4589e6187fdf](https://github.com/RTimothyEdwards/open_pdks/commit/52f78fa08f91503e0cff238979db4589e6187fdf)
+- The used commit from skywater-pdk is [bd7b0f6a274a4cec839023a5b94b5b216a8d9231](https://github.com/google/skywater-pdk/commit/bd7b0f6a274a4cec839023a5b94b5b216a8d9231)
+- The used commit from open_pdks is [48db3e1a428ae16f5d4c86e0b7679656cf8afe3d](https://github.com/RTimothyEdwards/open_pdks/commit/48db3e1a428ae16f5d4c86e0b7679656cf8afe3d)
 
 # How to use:
 

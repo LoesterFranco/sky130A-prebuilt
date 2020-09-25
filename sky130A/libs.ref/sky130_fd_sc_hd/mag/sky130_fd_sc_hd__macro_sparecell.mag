@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1599588201
+timestamp 1601050039
 << nwell >>
 rect 29 527 63 561
 << pwell >>
@@ -126,31 +126,31 @@ rect 2555 221 2567 255
 rect 2494 215 2567 221
 rect 29 -17 63 17
 use sky130_fd_sc_hd__inv_2  sky130_fd_sc_hd__inv_2_0
-timestamp 1599588201
+timestamp 1601050039
 transform 1 0 2392 0 1 0
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_2  sky130_fd_sc_hd__inv_2_1
-timestamp 1599588201
+timestamp 1601050039
 transform -1 0 276 0 1 0
 box -38 -48 314 592
 use sky130_fd_sc_hd__nor2_2  sky130_fd_sc_hd__nor2_2_0
-timestamp 1599588201
+timestamp 1601050039
 transform 1 0 1932 0 1 0
 box -38 -48 498 592
 use sky130_fd_sc_hd__nor2_2  sky130_fd_sc_hd__nor2_2_1
-timestamp 1599588201
+timestamp 1601050039
 transform -1 0 736 0 1 0
 box -38 -48 498 592
 use sky130_fd_sc_hd__nand2_2  sky130_fd_sc_hd__nand2_2_0
-timestamp 1599588201
+timestamp 1601050039
 transform 1 0 1472 0 1 0
 box -38 -48 498 592
 use sky130_fd_sc_hd__nand2_2  sky130_fd_sc_hd__nand2_2_1
-timestamp 1599588201
+timestamp 1601050039
 transform -1 0 1196 0 1 0
 box -38 -48 498 592
 use sky130_fd_sc_hd__conb_1  sky130_fd_sc_hd__conb_1_0
-timestamp 1599588201
+timestamp 1601050039
 transform 1 0 1196 0 1 0
 box -38 -48 314 592
 << labels >>
@@ -175,7 +175,7 @@ flabel metal1 s 46 544 46 544 0 FreeSans 200 0 0 0 VPWR
 port 4 nsew
 flabel pwell s 29 -17 63 17 0 FreeSans 200 0 0 0 VNB
 port 2 nsew
-flabel nwell s 29 527 63 561 0 FreeSans 200 0 0 0 VPB
+flabel nbase s 29 527 63 561 0 FreeSans 200 0 0 0 VPB
 port 3 nsew
 << properties >>
 string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds

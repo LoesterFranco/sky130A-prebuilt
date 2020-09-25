@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1599588244
+timestamp 1601050088
 << locali >>
 rect 21 271 111 353
 << obsli1 >>
@@ -31,19 +31,13 @@ rect 717 462 776 649
 rect 310 379 467 428
 rect 242 321 276 367
 rect 433 321 467 379
-rect 501 424 573 432
-rect 501 390 511 424
-rect 545 390 573 424
-rect 501 367 573 390
+rect 501 367 573 432
 rect 614 428 680 445
 rect 810 432 870 615
 rect 614 379 761 428
 rect 539 321 573 367
 rect 721 321 761 379
-rect 795 424 870 432
-rect 795 390 799 424
-rect 833 390 870 424
-rect 795 367 870 390
+rect 795 367 870 432
 rect 145 255 208 321
 rect 242 263 399 321
 rect 145 229 179 255
@@ -90,8 +84,6 @@ rect 703 649 737 683
 rect 799 649 833 683
 rect 895 649 929 683
 rect 223 390 257 424
-rect 511 390 545 424
-rect 799 390 833 424
 rect 31 -17 65 17
 rect 127 -17 161 17
 rect 223 -17 257 17
@@ -116,13 +108,11 @@ rect 737 649 799 683
 rect 833 649 895 683
 rect 929 649 960 683
 rect 0 617 960 649
-rect 0 616 50 617
 rect 193 464 842 498
 rect 193 424 269 464
 rect 193 390 223 424
 rect 257 390 269 424
 rect 193 384 269 390
-rect 0 49 50 50
 rect 0 17 960 49
 rect 0 -17 31 17
 rect 65 -17 127 17
@@ -137,14 +127,8 @@ rect 833 -17 895 17
 rect 929 -17 960 17
 rect 0 -49 960 -17
 << obsm1 >>
-rect 481 424 557 430
-rect 481 390 511 424
-rect 545 390 557 424
-rect 481 384 557 390
-rect 769 424 845 430
-rect 769 390 799 424
-rect 833 390 845 424
-rect 769 384 845 390
+rect 481 384 557 430
+rect 769 384 845 430
 << labels >>
 rlabel locali s 21 271 111 353 6 A
 port 1 nsew signal input
@@ -154,12 +138,8 @@ rlabel metal1 s 193 384 269 464 6 X
 port 2 nsew signal output
 rlabel metal1 s 0 -49 960 49 8 VGND
 port 3 nsew ground bidirectional
-rlabel metal1 s 0 0 50 50 6 VNB
-port 4 nsew ground bidirectional
-rlabel metal1 s 0 616 50 666 6 VPB
-port 5 nsew power bidirectional
 rlabel metal1 s 0 617 960 715 6 VPWR
-port 6 nsew power bidirectional
+port 4 nsew power bidirectional
 << properties >>
 string LEFsite unit
 string LEFclass CORE

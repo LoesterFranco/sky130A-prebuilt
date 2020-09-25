@@ -1,8 +1,0 @@
-magic
-tech sky130A
-timestamp 1599587575
-<< properties >>
-string gencell balun
-string parameter m=1
-string library sky130
-<< end >>

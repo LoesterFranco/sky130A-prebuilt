@@ -14,13 +14,16 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-VERSION 5.5 ;
-NAMESCASESENSITIVE ON ;
-BUSBITCHARS "[]" ;
-DIVIDERCHAR "/" ;
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+UNITS
+  DATABASE MICRONS 200 ;
+END UNITS
 MACRO sky130_fd_sc_ls__a2111o_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a2111o_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -150,7 +153,7 @@ END sky130_fd_sc_ls__a2111o_1
 
 MACRO sky130_fd_sc_ls__a2111o_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a2111o_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -278,7 +281,7 @@ END sky130_fd_sc_ls__a2111o_2
 
 MACRO sky130_fd_sc_ls__a2111o_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a2111o_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -448,7 +451,7 @@ END sky130_fd_sc_ls__a2111o_4
 
 MACRO sky130_fd_sc_ls__a2111oi_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a2111oi_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -562,7 +565,7 @@ END sky130_fd_sc_ls__a2111oi_1
 
 MACRO sky130_fd_sc_ls__a2111oi_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a2111oi_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -706,7 +709,7 @@ END sky130_fd_sc_ls__a2111oi_2
 
 MACRO sky130_fd_sc_ls__a2111oi_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a2111oi_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.08000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -888,7 +891,7 @@ END sky130_fd_sc_ls__a2111oi_4
 
 MACRO sky130_fd_sc_ls__a211o_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a211o_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -1001,7 +1004,7 @@ END sky130_fd_sc_ls__a211o_1
 
 MACRO sky130_fd_sc_ls__a211o_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a211o_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -1118,7 +1121,7 @@ END sky130_fd_sc_ls__a211o_2
 
 MACRO sky130_fd_sc_ls__a211o_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a211o_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.200000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -1275,7 +1278,7 @@ END sky130_fd_sc_ls__a211o_4
 
 MACRO sky130_fd_sc_ls__a211oi_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a211oi_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -1378,7 +1381,7 @@ END sky130_fd_sc_ls__a211oi_1
 
 MACRO sky130_fd_sc_ls__a211oi_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a211oi_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -1507,7 +1510,7 @@ END sky130_fd_sc_ls__a211oi_2
 
 MACRO sky130_fd_sc_ls__a211oi_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a211oi_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -1660,7 +1663,7 @@ END sky130_fd_sc_ls__a211oi_4
 
 MACRO sky130_fd_sc_ls__a21bo_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a21bo_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -1684,7 +1687,7 @@ MACRO sky130_fd_sc_ls__a21bo_1
     END
   END A2
   PIN B1_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -1772,7 +1775,7 @@ END sky130_fd_sc_ls__a21bo_1
 
 MACRO sky130_fd_sc_ls__a21bo_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a21bo_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -1796,7 +1799,7 @@ MACRO sky130_fd_sc_ls__a21bo_2
     END
   END A2
   PIN B1_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -1890,7 +1893,7 @@ END sky130_fd_sc_ls__a21bo_2
 
 MACRO sky130_fd_sc_ls__a21bo_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a21bo_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.240000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -2026,7 +2029,7 @@ END sky130_fd_sc_ls__a21bo_4
 
 MACRO sky130_fd_sc_ls__a21boi_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a21boi_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -2050,7 +2053,7 @@ MACRO sky130_fd_sc_ls__a21boi_1
     END
   END A2
   PIN B1_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -2130,7 +2133,7 @@ END sky130_fd_sc_ls__a21boi_1
 
 MACRO sky130_fd_sc_ls__a21boi_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a21boi_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -2250,7 +2253,7 @@ END sky130_fd_sc_ls__a21boi_2
 
 MACRO sky130_fd_sc_ls__a21boi_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a21boi_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.680000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -2397,7 +2400,7 @@ END sky130_fd_sc_ls__a21boi_4
 
 MACRO sky130_fd_sc_ls__a21o_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a21o_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -2501,7 +2504,7 @@ END sky130_fd_sc_ls__a21o_1
 
 MACRO sky130_fd_sc_ls__a21o_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a21o_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -2603,7 +2606,7 @@ END sky130_fd_sc_ls__a21o_2
 
 MACRO sky130_fd_sc_ls__a21o_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a21o_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -2733,7 +2736,7 @@ END sky130_fd_sc_ls__a21o_4
 
 MACRO sky130_fd_sc_ls__a21oi_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a21oi_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.920000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -2823,7 +2826,7 @@ END sky130_fd_sc_ls__a21oi_1
 
 MACRO sky130_fd_sc_ls__a21oi_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a21oi_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -2930,7 +2933,7 @@ END sky130_fd_sc_ls__a21oi_2
 
 MACRO sky130_fd_sc_ls__a21oi_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a21oi_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.240000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -3060,7 +3063,7 @@ END sky130_fd_sc_ls__a21oi_4
 
 MACRO sky130_fd_sc_ls__a221o_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a221o_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -3188,7 +3191,7 @@ END sky130_fd_sc_ls__a221o_1
 
 MACRO sky130_fd_sc_ls__a221o_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a221o_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -3323,7 +3326,7 @@ END sky130_fd_sc_ls__a221o_2
 
 MACRO sky130_fd_sc_ls__a221o_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a221o_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.600000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -3379,7 +3382,6 @@ MACRO sky130_fd_sc_ls__a221o_4
   END C1
   PIN X
     ANTENNADIFFAREA  1.086400 ;
-    ANTENNAPARTIALMETALSIDEAREA  2.205000 ;
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
@@ -3517,7 +3519,7 @@ END sky130_fd_sc_ls__a221o_4
 
 MACRO sky130_fd_sc_ls__a221oi_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a221oi_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -3635,7 +3637,7 @@ END sky130_fd_sc_ls__a221oi_1
 
 MACRO sky130_fd_sc_ls__a221oi_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a221oi_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -3784,7 +3786,7 @@ END sky130_fd_sc_ls__a221oi_2
 
 MACRO sky130_fd_sc_ls__a221oi_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a221oi_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.56000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -3972,7 +3974,7 @@ END sky130_fd_sc_ls__a221oi_4
 
 MACRO sky130_fd_sc_ls__a222o_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a222o_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -4111,7 +4113,7 @@ END sky130_fd_sc_ls__a222o_1
 
 MACRO sky130_fd_sc_ls__a222o_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a222o_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.280000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -4260,7 +4262,7 @@ END sky130_fd_sc_ls__a222o_2
 
 MACRO sky130_fd_sc_ls__a222oi_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a222oi_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -4392,7 +4394,7 @@ END sky130_fd_sc_ls__a222oi_1
 
 MACRO sky130_fd_sc_ls__a222oi_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a222oi_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.720000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -4573,7 +4575,7 @@ END sky130_fd_sc_ls__a222oi_2
 
 MACRO sky130_fd_sc_ls__a22o_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a22o_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -4683,7 +4685,7 @@ END sky130_fd_sc_ls__a22o_1
 
 MACRO sky130_fd_sc_ls__a22o_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a22o_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -4801,7 +4803,7 @@ END sky130_fd_sc_ls__a22o_2
 
 MACRO sky130_fd_sc_ls__a22o_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a22o_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.200000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -4957,7 +4959,7 @@ END sky130_fd_sc_ls__a22o_4
 
 MACRO sky130_fd_sc_ls__a22oi_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a22oi_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -5060,7 +5062,7 @@ END sky130_fd_sc_ls__a22oi_1
 
 MACRO sky130_fd_sc_ls__a22oi_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a22oi_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -5196,7 +5198,7 @@ END sky130_fd_sc_ls__a22oi_2
 
 MACRO sky130_fd_sc_ls__a22oi_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a22oi_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -5355,13 +5357,13 @@ END sky130_fd_sc_ls__a22oi_4
 
 MACRO sky130_fd_sc_ls__a2bb2o_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a2bb2o_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A1_N
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -5370,7 +5372,7 @@ MACRO sky130_fd_sc_ls__a2bb2o_1
     END
   END A1_N
   PIN A2_N
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -5480,13 +5482,13 @@ END sky130_fd_sc_ls__a2bb2o_1
 
 MACRO sky130_fd_sc_ls__a2bb2o_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a2bb2o_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A1_N
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -5495,7 +5497,7 @@ MACRO sky130_fd_sc_ls__a2bb2o_2
     END
   END A1_N
   PIN A2_N
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -5604,7 +5606,7 @@ END sky130_fd_sc_ls__a2bb2o_2
 
 MACRO sky130_fd_sc_ls__a2bb2o_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a2bb2o_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.200000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -5756,13 +5758,13 @@ END sky130_fd_sc_ls__a2bb2o_4
 
 MACRO sky130_fd_sc_ls__a2bb2oi_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a2bb2oi_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A1_N
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -5771,7 +5773,7 @@ MACRO sky130_fd_sc_ls__a2bb2oi_1
     END
   END A1_N
   PIN A2_N
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -5874,7 +5876,7 @@ END sky130_fd_sc_ls__a2bb2oi_1
 
 MACRO sky130_fd_sc_ls__a2bb2oi_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a2bb2oi_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.280000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -6004,7 +6006,7 @@ END sky130_fd_sc_ls__a2bb2oi_2
 
 MACRO sky130_fd_sc_ls__a2bb2oi_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a2bb2oi_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -6163,7 +6165,7 @@ END sky130_fd_sc_ls__a2bb2oi_4
 
 MACRO sky130_fd_sc_ls__a311o_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a311o_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -6292,7 +6294,7 @@ END sky130_fd_sc_ls__a311o_1
 
 MACRO sky130_fd_sc_ls__a311o_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a311o_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -6418,7 +6420,7 @@ END sky130_fd_sc_ls__a311o_2
 
 MACRO sky130_fd_sc_ls__a311o_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a311o_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.680000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -6470,7 +6472,6 @@ MACRO sky130_fd_sc_ls__a311o_4
   END C1
   PIN X
     ANTENNADIFFAREA  1.086400 ;
-    ANTENNAPARTIALMETALSIDEAREA  1.869000 ;
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
@@ -6600,7 +6601,7 @@ END sky130_fd_sc_ls__a311o_4
 
 MACRO sky130_fd_sc_ls__a311oi_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a311oi_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -6714,7 +6715,7 @@ END sky130_fd_sc_ls__a311oi_1
 
 MACRO sky130_fd_sc_ls__a311oi_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a311oi_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -6860,7 +6861,7 @@ END sky130_fd_sc_ls__a311oi_2
 
 MACRO sky130_fd_sc_ls__a311oi_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a311oi_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.08000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -7044,7 +7045,7 @@ END sky130_fd_sc_ls__a311oi_4
 
 MACRO sky130_fd_sc_ls__a31o_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a31o_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -7152,7 +7153,7 @@ END sky130_fd_sc_ls__a31o_1
 
 MACRO sky130_fd_sc_ls__a31o_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a31o_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -7265,7 +7266,7 @@ END sky130_fd_sc_ls__a31o_2
 
 MACRO sky130_fd_sc_ls__a31o_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a31o_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.200000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -7416,7 +7417,7 @@ END sky130_fd_sc_ls__a31o_4
 
 MACRO sky130_fd_sc_ls__a31oi_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a31oi_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -7518,7 +7519,7 @@ END sky130_fd_sc_ls__a31oi_1
 
 MACRO sky130_fd_sc_ls__a31oi_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a31oi_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -7644,7 +7645,7 @@ END sky130_fd_sc_ls__a31oi_2
 
 MACRO sky130_fd_sc_ls__a31oi_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a31oi_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -7804,7 +7805,7 @@ END sky130_fd_sc_ls__a31oi_4
 
 MACRO sky130_fd_sc_ls__a32o_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a32o_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -7926,7 +7927,7 @@ END sky130_fd_sc_ls__a32o_1
 
 MACRO sky130_fd_sc_ls__a32o_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a32o_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -8054,7 +8055,7 @@ END sky130_fd_sc_ls__a32o_2
 
 MACRO sky130_fd_sc_ls__a32o_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a32o_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -8234,7 +8235,7 @@ END sky130_fd_sc_ls__a32o_4
 
 MACRO sky130_fd_sc_ls__a32oi_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a32oi_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -8351,7 +8352,7 @@ END sky130_fd_sc_ls__a32oi_1
 
 MACRO sky130_fd_sc_ls__a32oi_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a32oi_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.240000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -8505,7 +8506,7 @@ END sky130_fd_sc_ls__a32oi_2
 
 MACRO sky130_fd_sc_ls__a32oi_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a32oi_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.56000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -8688,7 +8689,7 @@ END sky130_fd_sc_ls__a32oi_4
 
 MACRO sky130_fd_sc_ls__a41o_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a41o_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -8812,7 +8813,7 @@ END sky130_fd_sc_ls__a41o_1
 
 MACRO sky130_fd_sc_ls__a41o_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a41o_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -8942,7 +8943,7 @@ END sky130_fd_sc_ls__a41o_2
 
 MACRO sky130_fd_sc_ls__a41o_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a41o_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -9112,7 +9113,7 @@ END sky130_fd_sc_ls__a41o_4
 
 MACRO sky130_fd_sc_ls__a41oi_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a41oi_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -9227,7 +9228,7 @@ END sky130_fd_sc_ls__a41oi_1
 
 MACRO sky130_fd_sc_ls__a41oi_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a41oi_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -9377,7 +9378,7 @@ END sky130_fd_sc_ls__a41oi_2
 
 MACRO sky130_fd_sc_ls__a41oi_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__a41oi_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.08000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -9559,7 +9560,7 @@ END sky130_fd_sc_ls__a41oi_4
 
 MACRO sky130_fd_sc_ls__and2_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and2_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -9640,7 +9641,7 @@ END sky130_fd_sc_ls__and2_1
 
 MACRO sky130_fd_sc_ls__and2_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and2_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -9728,7 +9729,7 @@ END sky130_fd_sc_ls__and2_2
 
 MACRO sky130_fd_sc_ls__and2_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and2_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -9834,13 +9835,13 @@ END sky130_fd_sc_ls__and2_4
 
 MACRO sky130_fd_sc_ls__and2b_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and2b_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -9925,13 +9926,13 @@ END sky130_fd_sc_ls__and2b_1
 
 MACRO sky130_fd_sc_ls__and2b_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and2b_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -10022,7 +10023,7 @@ END sky130_fd_sc_ls__and2b_2
 
 MACRO sky130_fd_sc_ls__and2b_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and2b_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -10136,7 +10137,7 @@ END sky130_fd_sc_ls__and2b_4
 
 MACRO sky130_fd_sc_ls__and3_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and3_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -10231,7 +10232,7 @@ END sky130_fd_sc_ls__and3_1
 
 MACRO sky130_fd_sc_ls__and3_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and3_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -10331,7 +10332,7 @@ END sky130_fd_sc_ls__and3_2
 
 MACRO sky130_fd_sc_ls__and3_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and3_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -10457,13 +10458,13 @@ END sky130_fd_sc_ls__and3_4
 
 MACRO sky130_fd_sc_ls__and3b_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and3b_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -10563,13 +10564,13 @@ END sky130_fd_sc_ls__and3b_1
 
 MACRO sky130_fd_sc_ls__and3b_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and3b_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -10674,7 +10675,7 @@ END sky130_fd_sc_ls__and3b_2
 
 MACRO sky130_fd_sc_ls__and3b_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and3b_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.720000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -10814,7 +10815,7 @@ END sky130_fd_sc_ls__and3b_4
 
 MACRO sky130_fd_sc_ls__and4_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and4_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -10922,7 +10923,7 @@ END sky130_fd_sc_ls__and4_1
 
 MACRO sky130_fd_sc_ls__and4_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and4_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -11034,7 +11035,7 @@ END sky130_fd_sc_ls__and4_2
 
 MACRO sky130_fd_sc_ls__and4_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and4_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.720000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -11185,13 +11186,13 @@ END sky130_fd_sc_ls__and4_4
 
 MACRO sky130_fd_sc_ls__and4b_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and4b_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -11305,13 +11306,13 @@ END sky130_fd_sc_ls__and4b_1
 
 MACRO sky130_fd_sc_ls__and4b_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and4b_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -11424,7 +11425,7 @@ END sky130_fd_sc_ls__and4b_2
 
 MACRO sky130_fd_sc_ls__and4b_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and4b_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.680000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -11579,13 +11580,13 @@ END sky130_fd_sc_ls__and4b_4
 
 MACRO sky130_fd_sc_ls__and4bb_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and4bb_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -11594,7 +11595,7 @@ MACRO sky130_fd_sc_ls__and4bb_1
     END
   END A_N
   PIN B_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -11709,13 +11710,13 @@ END sky130_fd_sc_ls__and4bb_1
 
 MACRO sky130_fd_sc_ls__and4bb_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and4bb_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.280000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -11724,7 +11725,7 @@ MACRO sky130_fd_sc_ls__and4bb_2
     END
   END A_N
   PIN B_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -11842,7 +11843,7 @@ END sky130_fd_sc_ls__and4bb_2
 
 MACRO sky130_fd_sc_ls__and4bb_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__and4bb_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.120000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -12019,13 +12020,13 @@ END sky130_fd_sc_ls__and4bb_4
 
 MACRO sky130_fd_sc_ls__buf_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__buf_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.920000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -12090,7 +12091,7 @@ END sky130_fd_sc_ls__buf_1
 
 MACRO sky130_fd_sc_ls__buf_16
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__buf_16 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.56000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -12264,7 +12265,7 @@ END sky130_fd_sc_ls__buf_16
 
 MACRO sky130_fd_sc_ls__buf_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__buf_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -12340,7 +12341,7 @@ END sky130_fd_sc_ls__buf_2
 
 MACRO sky130_fd_sc_ls__buf_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__buf_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -12427,7 +12428,7 @@ END sky130_fd_sc_ls__buf_4
 
 MACRO sky130_fd_sc_ls__buf_8
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__buf_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -12534,7 +12535,7 @@ END sky130_fd_sc_ls__buf_8
 
 MACRO sky130_fd_sc_ls__bufbuf_16
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__bufbuf_16 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  12.96000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -12743,13 +12744,13 @@ END sky130_fd_sc_ls__bufbuf_16
 
 MACRO sky130_fd_sc_ls__bufbuf_8
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__bufbuf_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.200000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -12869,9 +12870,9 @@ END sky130_fd_sc_ls__bufbuf_8
 
 MACRO sky130_fd_sc_ls__bufinv_16
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__bufinv_16 ;
   ORIGIN  0.000000  0.000000 ;
-  SIZE 12 BY  3.330000 ;
+  SIZE  12.00000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
@@ -13065,7 +13066,7 @@ END sky130_fd_sc_ls__bufinv_16
 
 MACRO sky130_fd_sc_ls__bufinv_8
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__bufinv_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.240000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -13180,7 +13181,7 @@ END sky130_fd_sc_ls__bufinv_8
 
 MACRO sky130_fd_sc_ls__clkbuf_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkbuf_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.920000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -13250,7 +13251,7 @@ END sky130_fd_sc_ls__clkbuf_1
 
 MACRO sky130_fd_sc_ls__clkbuf_16
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkbuf_16 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.600000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -13422,7 +13423,7 @@ END sky130_fd_sc_ls__clkbuf_16
 
 MACRO sky130_fd_sc_ls__clkbuf_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkbuf_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.920000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -13494,7 +13495,7 @@ END sky130_fd_sc_ls__clkbuf_2
 
 MACRO sky130_fd_sc_ls__clkbuf_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkbuf_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -13575,7 +13576,7 @@ END sky130_fd_sc_ls__clkbuf_4
 
 MACRO sky130_fd_sc_ls__clkbuf_8
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkbuf_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.280000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -13679,7 +13680,7 @@ END sky130_fd_sc_ls__clkbuf_8
 
 MACRO sky130_fd_sc_ls__clkdlyinv3sd1_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkdlyinv3sd1_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -13758,7 +13759,7 @@ END sky130_fd_sc_ls__clkdlyinv3sd1_1
 
 MACRO sky130_fd_sc_ls__clkdlyinv3sd2_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkdlyinv3sd2_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -13837,7 +13838,7 @@ END sky130_fd_sc_ls__clkdlyinv3sd2_1
 
 MACRO sky130_fd_sc_ls__clkdlyinv3sd3_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkdlyinv3sd3_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -13916,7 +13917,7 @@ END sky130_fd_sc_ls__clkdlyinv3sd3_1
 
 MACRO sky130_fd_sc_ls__clkdlyinv5sd1_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkdlyinv5sd1_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.280000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -14016,7 +14017,7 @@ END sky130_fd_sc_ls__clkdlyinv5sd1_1
 
 MACRO sky130_fd_sc_ls__clkdlyinv5sd2_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkdlyinv5sd2_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.280000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -14116,7 +14117,7 @@ END sky130_fd_sc_ls__clkdlyinv5sd2_1
 
 MACRO sky130_fd_sc_ls__clkdlyinv5sd3_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkdlyinv5sd3_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.280000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -14216,7 +14217,7 @@ END sky130_fd_sc_ls__clkdlyinv5sd3_1
 
 MACRO sky130_fd_sc_ls__clkinv_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkinv_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.440000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -14282,7 +14283,7 @@ END sky130_fd_sc_ls__clkinv_1
 
 MACRO sky130_fd_sc_ls__clkinv_16
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkinv_16 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.52000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -14468,7 +14469,7 @@ END sky130_fd_sc_ls__clkinv_16
 
 MACRO sky130_fd_sc_ls__clkinv_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkinv_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.920000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -14537,7 +14538,7 @@ END sky130_fd_sc_ls__clkinv_2
 
 MACRO sky130_fd_sc_ls__clkinv_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkinv_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -14618,7 +14619,7 @@ END sky130_fd_sc_ls__clkinv_4
 
 MACRO sky130_fd_sc_ls__clkinv_8
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__clkinv_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.240000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -14721,13 +14722,12 @@ END sky130_fd_sc_ls__clkinv_8
 
 MACRO sky130_fd_sc_ls__conb_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__conb_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.440000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN HI
-    ANTENNAPARTIALMETALSIDEAREA  0.182000 ;
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
@@ -14737,7 +14737,6 @@ MACRO sky130_fd_sc_ls__conb_1
     END
   END HI
   PIN LO
-    ANTENNAPARTIALMETALSIDEAREA  0.182000 ;
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
@@ -14783,7 +14782,7 @@ END sky130_fd_sc_ls__conb_1
 
 MACRO sky130_fd_sc_ls__decap_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__decap_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.920000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -14831,7 +14830,7 @@ END sky130_fd_sc_ls__decap_4
 
 MACRO sky130_fd_sc_ls__decap_8
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__decap_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -14889,7 +14888,7 @@ END sky130_fd_sc_ls__decap_8
 
 MACRO sky130_fd_sc_ls__decaphe_18
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__decaphe_18 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -14970,7 +14969,7 @@ END sky130_fd_sc_ls__decaphe_18
 
 MACRO sky130_fd_sc_ls__decaphe_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__decaphe_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  0.960000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -15010,7 +15009,7 @@ END sky130_fd_sc_ls__decaphe_2
 
 MACRO sky130_fd_sc_ls__decaphe_3
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__decaphe_3 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.440000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -15054,7 +15053,7 @@ END sky130_fd_sc_ls__decaphe_3
 
 MACRO sky130_fd_sc_ls__decaphe_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__decaphe_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.920000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -15100,7 +15099,7 @@ END sky130_fd_sc_ls__decaphe_4
 
 MACRO sky130_fd_sc_ls__decaphe_6
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__decaphe_6 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -15150,7 +15149,7 @@ END sky130_fd_sc_ls__decaphe_6
 
 MACRO sky130_fd_sc_ls__decaphe_8
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__decaphe_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -15205,9 +15204,46 @@ MACRO sky130_fd_sc_ls__decaphe_8
 END sky130_fd_sc_ls__decaphe_8
 #--------EOF---------
 
+MACRO sky130_fd_sc_ls__decaphetap_2
+  CLASS BLOCK ;
+  FOREIGN sky130_fd_sc_ls__decaphetap_2 ;
+  ORIGIN  0.000000  0.000000 ;
+  SIZE  0.960000 BY  3.330000 ;
+  PIN VGND
+    USE GROUND ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000000 -0.245000 0.960000 0.245000 ;
+    END
+  END VGND
+  PIN VPWR
+    USE POWER ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000000 3.085000 0.960000 3.575000 ;
+    END
+  END VPWR
+  OBS
+    LAYER li1 ;
+      RECT 0.000000 -0.085000 0.960000 0.085000 ;
+      RECT 0.000000  3.245000 0.960000 3.415000 ;
+      RECT 0.085000  0.085000 0.470000 0.430000 ;
+      RECT 0.085000  0.430000 0.260000 1.030000 ;
+      RECT 0.085000  1.030000 0.470000 1.675000 ;
+      RECT 0.085000  1.845000 0.875000 3.245000 ;
+      RECT 0.265000  0.435000 0.470000 1.025000 ;
+    LAYER mcon ;
+      RECT 0.155000 -0.085000 0.325000 0.085000 ;
+      RECT 0.155000  3.245000 0.325000 3.415000 ;
+      RECT 0.635000 -0.085000 0.805000 0.085000 ;
+      RECT 0.635000  3.245000 0.805000 3.415000 ;
+  END
+END sky130_fd_sc_ls__decaphetap_2
+#--------EOF---------
+
 MACRO sky130_fd_sc_ls__dfbbn_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfbbn_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  13.44000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -15251,7 +15287,7 @@ MACRO sky130_fd_sc_ls__dfbbn_1
     END
   END RESET_B
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  2.541000 ;
+    ANTENNAGATEAREA  0.469500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -15469,7 +15505,7 @@ END sky130_fd_sc_ls__dfbbn_1
 
 MACRO sky130_fd_sc_ls__dfbbn_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfbbn_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  14.40000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -15518,7 +15554,7 @@ MACRO sky130_fd_sc_ls__dfbbn_2
     END
   END RESET_B
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  2.541000 ;
+    ANTENNAGATEAREA  0.469500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -15749,7 +15785,7 @@ END sky130_fd_sc_ls__dfbbn_2
 
 MACRO sky130_fd_sc_ls__dfbbp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfbbp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  12.96000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -15793,7 +15829,7 @@ MACRO sky130_fd_sc_ls__dfbbp_1
     END
   END RESET_B
   PIN SET_B
-    ANTENNAGATEAREA  0.470000 ;
+    ANTENNAGATEAREA  0.469500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -15994,7 +16030,7 @@ END sky130_fd_sc_ls__dfbbp_1
 
 MACRO sky130_fd_sc_ls__dfrbp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfrbp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.52000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -16230,7 +16266,7 @@ END sky130_fd_sc_ls__dfrbp_1
 
 MACRO sky130_fd_sc_ls__dfrbp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfrbp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  13.92000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -16474,7 +16510,7 @@ END sky130_fd_sc_ls__dfrbp_2
 
 MACRO sky130_fd_sc_ls__dfrtn_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfrtn_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.04000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -16680,7 +16716,7 @@ END sky130_fd_sc_ls__dfrtn_1
 
 MACRO sky130_fd_sc_ls__dfrtp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfrtp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.04000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -16915,7 +16951,7 @@ END sky130_fd_sc_ls__dfrtp_1
 
 MACRO sky130_fd_sc_ls__dfrtp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfrtp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.52000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -17155,7 +17191,7 @@ END sky130_fd_sc_ls__dfrtp_2
 
 MACRO sky130_fd_sc_ls__dfrtp_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfrtp_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  13.44000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -17395,9 +17431,9 @@ END sky130_fd_sc_ls__dfrtp_4
 
 MACRO sky130_fd_sc_ls__dfsbp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfsbp_1 ;
   ORIGIN  0.000000  0.000000 ;
-  SIZE 12 BY  3.330000 ;
+  SIZE  12.00000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
@@ -17432,7 +17468,7 @@ MACRO sky130_fd_sc_ls__dfsbp_1
     END
   END Q_N
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  2.205000 ;
+    ANTENNAGATEAREA  0.252000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -17621,7 +17657,7 @@ END sky130_fd_sc_ls__dfsbp_1
 
 MACRO sky130_fd_sc_ls__dfsbp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfsbp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  12.96000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -17657,7 +17693,7 @@ MACRO sky130_fd_sc_ls__dfsbp_2
     END
   END Q_N
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  2.205000 ;
+    ANTENNAGATEAREA  0.252000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -17854,7 +17890,7 @@ END sky130_fd_sc_ls__dfsbp_2
 
 MACRO sky130_fd_sc_ls__dfstp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfstp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.04000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -17879,7 +17915,7 @@ MACRO sky130_fd_sc_ls__dfstp_1
     END
   END Q
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  2.205000 ;
+    ANTENNAGATEAREA  0.252000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -18064,9 +18100,9 @@ END sky130_fd_sc_ls__dfstp_1
 
 MACRO sky130_fd_sc_ls__dfstp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfstp_2 ;
   ORIGIN  0.000000  0.000000 ;
-  SIZE 12 BY  3.330000 ;
+  SIZE  12.00000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
@@ -18091,7 +18127,7 @@ MACRO sky130_fd_sc_ls__dfstp_2
     END
   END Q
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  1.869000 ;
+    ANTENNAGATEAREA  0.252000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -18277,7 +18313,7 @@ END sky130_fd_sc_ls__dfstp_2
 
 MACRO sky130_fd_sc_ls__dfstp_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfstp_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  12.96000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -18308,7 +18344,7 @@ MACRO sky130_fd_sc_ls__dfstp_4
     END
   END Q
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  2.205000 ;
+    ANTENNAGATEAREA  0.252000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -18502,7 +18538,7 @@ END sky130_fd_sc_ls__dfstp_4
 
 MACRO sky130_fd_sc_ls__dfxbp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfxbp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.600000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -18694,7 +18730,7 @@ END sky130_fd_sc_ls__dfxbp_1
 
 MACRO sky130_fd_sc_ls__dfxbp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfxbp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.04000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -18887,7 +18923,7 @@ END sky130_fd_sc_ls__dfxbp_2
 
 MACRO sky130_fd_sc_ls__dfxtp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfxtp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -19058,7 +19094,7 @@ END sky130_fd_sc_ls__dfxtp_1
 
 MACRO sky130_fd_sc_ls__dfxtp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfxtp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -19242,7 +19278,7 @@ END sky130_fd_sc_ls__dfxtp_2
 
 MACRO sky130_fd_sc_ls__dfxtp_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dfxtp_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.600000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -19437,14 +19473,13 @@ END sky130_fd_sc_ls__dfxtp_4
 
 MACRO sky130_fd_sc_ls__diode_2
   CLASS CORE ANTENNACELL ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__diode_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  0.960000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN DIODE
     ANTENNADIFFAREA  0.641700 ;
-    ANTENNAGATEAREA  0.000000 ;
     DIRECTION INPUT ;
     PORT
       LAYER li1 ;
@@ -19484,7 +19519,7 @@ END sky130_fd_sc_ls__diode_2
 
 MACRO sky130_fd_sc_ls__dlclkp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlclkp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.720000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -19619,7 +19654,7 @@ END sky130_fd_sc_ls__dlclkp_1
 
 MACRO sky130_fd_sc_ls__dlclkp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlclkp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.680000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -19758,7 +19793,7 @@ END sky130_fd_sc_ls__dlclkp_2
 
 MACRO sky130_fd_sc_ls__dlclkp_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlclkp_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -19912,13 +19947,13 @@ END sky130_fd_sc_ls__dlclkp_4
 
 MACRO sky130_fd_sc_ls__dlrbn_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlrbn_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -20089,13 +20124,13 @@ END sky130_fd_sc_ls__dlrbn_1
 
 MACRO sky130_fd_sc_ls__dlrbn_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlrbn_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.120000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -20275,13 +20310,13 @@ END sky130_fd_sc_ls__dlrbn_2
 
 MACRO sky130_fd_sc_ls__dlrbp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlrbp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -20447,13 +20482,13 @@ END sky130_fd_sc_ls__dlrbp_1
 
 MACRO sky130_fd_sc_ls__dlrbp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlrbp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.120000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -20625,13 +20660,13 @@ END sky130_fd_sc_ls__dlrbp_2
 
 MACRO sky130_fd_sc_ls__dlrtn_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlrtn_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.200000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -20770,13 +20805,13 @@ END sky130_fd_sc_ls__dlrtn_1
 
 MACRO sky130_fd_sc_ls__dlrtn_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlrtn_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -20920,13 +20955,13 @@ END sky130_fd_sc_ls__dlrtn_2
 
 MACRO sky130_fd_sc_ls__dlrtn_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlrtn_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.600000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -21092,13 +21127,13 @@ END sky130_fd_sc_ls__dlrtn_4
 
 MACRO sky130_fd_sc_ls__dlrtp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlrtp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.720000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -21240,13 +21275,13 @@ END sky130_fd_sc_ls__dlrtp_1
 
 MACRO sky130_fd_sc_ls__dlrtp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlrtp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.200000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -21398,13 +21433,13 @@ END sky130_fd_sc_ls__dlrtp_2
 
 MACRO sky130_fd_sc_ls__dlrtp_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlrtp_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.120000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -21574,13 +21609,13 @@ END sky130_fd_sc_ls__dlrtp_4
 
 MACRO sky130_fd_sc_ls__dlxbn_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlxbn_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -21726,13 +21761,13 @@ END sky130_fd_sc_ls__dlxbn_1
 
 MACRO sky130_fd_sc_ls__dlxbn_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlxbn_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.120000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -21892,13 +21927,13 @@ END sky130_fd_sc_ls__dlxbn_2
 
 MACRO sky130_fd_sc_ls__dlxbp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlxbp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -22047,13 +22082,13 @@ END sky130_fd_sc_ls__dlxbp_1
 
 MACRO sky130_fd_sc_ls__dlxtn_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlxtn_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.720000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -22184,13 +22219,13 @@ END sky130_fd_sc_ls__dlxtn_1
 
 MACRO sky130_fd_sc_ls__dlxtn_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlxtn_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.200000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -22330,13 +22365,13 @@ END sky130_fd_sc_ls__dlxtn_2
 
 MACRO sky130_fd_sc_ls__dlxtn_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlxtn_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -22486,13 +22521,13 @@ END sky130_fd_sc_ls__dlxtn_4
 
 MACRO sky130_fd_sc_ls__dlxtp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlxtp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.680000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -22643,7 +22678,7 @@ END sky130_fd_sc_ls__dlxtp_1
 
 MACRO sky130_fd_sc_ls__dlygate4sd1_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlygate4sd1_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -22734,7 +22769,7 @@ END sky130_fd_sc_ls__dlygate4sd1_1
 
 MACRO sky130_fd_sc_ls__dlygate4sd2_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlygate4sd2_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -22825,7 +22860,7 @@ END sky130_fd_sc_ls__dlygate4sd2_1
 
 MACRO sky130_fd_sc_ls__dlygate4sd3_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlygate4sd3_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -22916,7 +22951,7 @@ END sky130_fd_sc_ls__dlygate4sd3_1
 
 MACRO sky130_fd_sc_ls__dlymetal6s2s_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlymetal6s2s_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -22932,7 +22967,7 @@ MACRO sky130_fd_sc_ls__dlymetal6s2s_1
   END A
   PIN X
     ANTENNADIFFAREA  0.504100 ;
-    ANTENNAPARTIALMETALSIDEAREA  0.280000 ;
+    ANTENNAGATEAREA  0.126000 ;
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
@@ -23038,7 +23073,7 @@ END sky130_fd_sc_ls__dlymetal6s2s_1
 
 MACRO sky130_fd_sc_ls__dlymetal6s4s_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlymetal6s4s_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -23054,7 +23089,7 @@ MACRO sky130_fd_sc_ls__dlymetal6s4s_1
   END A
   PIN X
     ANTENNADIFFAREA  0.504100 ;
-    ANTENNAPARTIALMETALSIDEAREA  0.280000 ;
+    ANTENNAGATEAREA  0.126000 ;
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
@@ -23160,7 +23195,7 @@ END sky130_fd_sc_ls__dlymetal6s4s_1
 
 MACRO sky130_fd_sc_ls__dlymetal6s6s_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__dlymetal6s6s_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -23176,7 +23211,6 @@ MACRO sky130_fd_sc_ls__dlymetal6s6s_1
   END A
   PIN X
     ANTENNADIFFAREA  0.504100 ;
-    ANTENNAPARTIALMETALSIDEAREA  0.290500 ;
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
@@ -23282,13 +23316,13 @@ END sky130_fd_sc_ls__dlymetal6s6s_1
 
 MACRO sky130_fd_sc_ls__ebufn_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__ebufn_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -23297,7 +23331,7 @@ MACRO sky130_fd_sc_ls__ebufn_1
     END
   END A
   PIN TE_B
-    ANTENNAGATEAREA  0.377000 ;
+    ANTENNAGATEAREA  0.376500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -23383,7 +23417,7 @@ END sky130_fd_sc_ls__ebufn_1
 
 MACRO sky130_fd_sc_ls__ebufn_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__ebufn_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -23491,7 +23525,7 @@ END sky130_fd_sc_ls__ebufn_2
 
 MACRO sky130_fd_sc_ls__ebufn_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__ebufn_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -23620,7 +23654,7 @@ END sky130_fd_sc_ls__ebufn_4
 
 MACRO sky130_fd_sc_ls__ebufn_8
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__ebufn_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.56000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -23787,7 +23821,7 @@ END sky130_fd_sc_ls__ebufn_8
 
 MACRO sky130_fd_sc_ls__edfxbp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__edfxbp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  14.40000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -24036,7 +24070,7 @@ END sky130_fd_sc_ls__edfxbp_1
 
 MACRO sky130_fd_sc_ls__edfxtp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__edfxtp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  12.96000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -24263,7 +24297,7 @@ END sky130_fd_sc_ls__edfxtp_1
 
 MACRO sky130_fd_sc_ls__einvn_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__einvn_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -24344,7 +24378,7 @@ END sky130_fd_sc_ls__einvn_1
 
 MACRO sky130_fd_sc_ls__einvn_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__einvn_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -24439,7 +24473,7 @@ END sky130_fd_sc_ls__einvn_2
 
 MACRO sky130_fd_sc_ls__einvn_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__einvn_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.280000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -24552,7 +24586,7 @@ END sky130_fd_sc_ls__einvn_4
 
 MACRO sky130_fd_sc_ls__einvn_8
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__einvn_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.120000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -24702,7 +24736,7 @@ END sky130_fd_sc_ls__einvn_8
 
 MACRO sky130_fd_sc_ls__einvp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__einvp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -24783,7 +24817,7 @@ END sky130_fd_sc_ls__einvp_1
 
 MACRO sky130_fd_sc_ls__einvp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__einvp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -24875,7 +24909,7 @@ END sky130_fd_sc_ls__einvp_2
 
 MACRO sky130_fd_sc_ls__einvp_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__einvp_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -24992,7 +25026,7 @@ END sky130_fd_sc_ls__einvp_4
 
 MACRO sky130_fd_sc_ls__einvp_8
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__einvp_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.120000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -25142,7 +25176,7 @@ END sky130_fd_sc_ls__einvp_8
 
 MACRO sky130_fd_sc_ls__fa_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fa_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -25174,7 +25208,7 @@ MACRO sky130_fd_sc_ls__fa_1
     END
   END B
   PIN CIN
-    ANTENNAPARTIALMETALSIDEAREA  2.604000 ;
+    ANTENNAGATEAREA  0.738000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -25331,13 +25365,13 @@ END sky130_fd_sc_ls__fa_1
 
 MACRO sky130_fd_sc_ls__fa_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fa_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.120000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAPARTIALMETALSIDEAREA  4.683000 ;
+    ANTENNAGATEAREA  1.044000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -25529,7 +25563,7 @@ END sky130_fd_sc_ls__fa_2
 
 MACRO sky130_fd_sc_ls__fa_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fa_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.04000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -25564,7 +25598,7 @@ MACRO sky130_fd_sc_ls__fa_4
     END
   END B
   PIN CIN
-    ANTENNAPARTIALMETALSIDEAREA  2.604000 ;
+    ANTENNAGATEAREA  0.783000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -25750,13 +25784,13 @@ END sky130_fd_sc_ls__fa_4
 
 MACRO sky130_fd_sc_ls__fah_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fah_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  13.92000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAPARTIALMETALSIDEAREA  0.132000 ;
+    ANTENNAGATEAREA  0.492000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -25765,7 +25799,7 @@ MACRO sky130_fd_sc_ls__fah_1
     END
   END A
   PIN B
-    ANTENNAPARTIALMETALSIDEAREA  0.072000 ;
+    ANTENNAGATEAREA  0.723000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -25774,7 +25808,7 @@ MACRO sky130_fd_sc_ls__fah_1
     END
   END B
   PIN CI
-    ANTENNAPARTIALMETALSIDEAREA  0.072000 ;
+    ANTENNAGATEAREA  0.246000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -25784,7 +25818,6 @@ MACRO sky130_fd_sc_ls__fah_1
   END CI
   PIN COUT
     ANTENNADIFFAREA  0.674850 ;
-    ANTENNAPARTIALMETALSIDEAREA  1.117000 ;
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
@@ -25800,7 +25833,6 @@ MACRO sky130_fd_sc_ls__fah_1
   END COUT
   PIN SUM
     ANTENNADIFFAREA  0.537600 ;
-    ANTENNAPARTIALMETALSIDEAREA  0.215000 ;
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
@@ -26032,7 +26064,7 @@ END sky130_fd_sc_ls__fah_1
 
 MACRO sky130_fd_sc_ls__fah_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fah_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  14.40000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -26301,7 +26333,7 @@ END sky130_fd_sc_ls__fah_2
 
 MACRO sky130_fd_sc_ls__fah_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fah_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  15.36000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -26585,7 +26617,7 @@ END sky130_fd_sc_ls__fah_4
 
 MACRO sky130_fd_sc_ls__fahcin_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fahcin_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  12.96000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -26829,7 +26861,7 @@ END sky130_fd_sc_ls__fahcin_1
 
 MACRO sky130_fd_sc_ls__fahcon_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fahcon_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.52000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -27070,7 +27102,7 @@ END sky130_fd_sc_ls__fahcon_1
 
 MACRO sky130_fd_sc_ls__fill_1
   CLASS CORE SPACER ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fill_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  0.480000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -27106,7 +27138,7 @@ END sky130_fd_sc_ls__fill_1
 
 MACRO sky130_fd_sc_ls__fill_2
   CLASS CORE SPACER ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fill_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  0.960000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -27144,7 +27176,7 @@ END sky130_fd_sc_ls__fill_2
 
 MACRO sky130_fd_sc_ls__fill_4
   CLASS CORE SPACER ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fill_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.920000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -27186,7 +27218,7 @@ END sky130_fd_sc_ls__fill_4
 
 MACRO sky130_fd_sc_ls__fill_8
   CLASS CORE SPACER ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fill_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -27236,7 +27268,7 @@ END sky130_fd_sc_ls__fill_8
 
 MACRO sky130_fd_sc_ls__fill_diode_2
   CLASS CORE SPACER ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fill_diode_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  0.960000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -27276,7 +27308,7 @@ END sky130_fd_sc_ls__fill_diode_2
 
 MACRO sky130_fd_sc_ls__fill_diode_4
   CLASS CORE SPACER ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fill_diode_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.920000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -27320,7 +27352,7 @@ END sky130_fd_sc_ls__fill_diode_4
 
 MACRO sky130_fd_sc_ls__fill_diode_8
   CLASS CORE SPACER ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__fill_diode_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -27372,7 +27404,7 @@ END sky130_fd_sc_ls__fill_diode_8
 
 MACRO sky130_fd_sc_ls__ha_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__ha_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -27492,7 +27524,7 @@ END sky130_fd_sc_ls__ha_1
 
 MACRO sky130_fd_sc_ls__ha_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__ha_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -27624,7 +27656,7 @@ END sky130_fd_sc_ls__ha_2
 
 MACRO sky130_fd_sc_ls__ha_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__ha_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.08000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -27661,7 +27693,6 @@ MACRO sky130_fd_sc_ls__ha_4
   END COUT
   PIN SUM
     ANTENNADIFFAREA  1.470100 ;
-    ANTENNAPARTIALMETALSIDEAREA  0.861000 ;
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
@@ -27807,7 +27838,7 @@ END sky130_fd_sc_ls__ha_4
 
 MACRO sky130_fd_sc_ls__inv_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__inv_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.440000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -27867,7 +27898,7 @@ END sky130_fd_sc_ls__inv_1
 
 MACRO sky130_fd_sc_ls__inv_16
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__inv_16 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -28011,7 +28042,7 @@ END sky130_fd_sc_ls__inv_16
 
 MACRO sky130_fd_sc_ls__inv_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__inv_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.440000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -28074,7 +28105,7 @@ END sky130_fd_sc_ls__inv_2
 
 MACRO sky130_fd_sc_ls__inv_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__inv_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -28148,7 +28179,7 @@ END sky130_fd_sc_ls__inv_4
 
 MACRO sky130_fd_sc_ls__inv_8
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__inv_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -28241,7 +28272,7 @@ END sky130_fd_sc_ls__inv_8
 
 MACRO sky130_fd_sc_ls__maj3_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__maj3_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -28346,7 +28377,7 @@ END sky130_fd_sc_ls__maj3_1
 
 MACRO sky130_fd_sc_ls__maj3_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__maj3_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -28458,7 +28489,7 @@ END sky130_fd_sc_ls__maj3_2
 
 MACRO sky130_fd_sc_ls__maj3_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__maj3_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -28625,7 +28656,7 @@ END sky130_fd_sc_ls__maj3_4
 
 MACRO sky130_fd_sc_ls__mux2_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__mux2_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -28652,7 +28683,7 @@ MACRO sky130_fd_sc_ls__mux2_1
     END
   END A1
   PIN S
-    ANTENNAGATEAREA  0.470000 ;
+    ANTENNAGATEAREA  0.469500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -28742,7 +28773,7 @@ END sky130_fd_sc_ls__mux2_1
 
 MACRO sky130_fd_sc_ls__mux2_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__mux2_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.280000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -28766,7 +28797,7 @@ MACRO sky130_fd_sc_ls__mux2_2
     END
   END A1
   PIN S
-    ANTENNAGATEAREA  0.470000 ;
+    ANTENNAGATEAREA  0.469500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -28868,7 +28899,7 @@ END sky130_fd_sc_ls__mux2_2
 
 MACRO sky130_fd_sc_ls__mux2_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__mux2_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -29034,7 +29065,7 @@ END sky130_fd_sc_ls__mux2_4
 
 MACRO sky130_fd_sc_ls__mux2i_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__mux2i_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -29058,7 +29089,7 @@ MACRO sky130_fd_sc_ls__mux2i_1
     END
   END A1
   PIN S
-    ANTENNAGATEAREA  0.488000 ;
+    ANTENNAGATEAREA  0.487500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -29143,7 +29174,7 @@ END sky130_fd_sc_ls__mux2i_1
 
 MACRO sky130_fd_sc_ls__mux2i_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__mux2i_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.240000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -29278,7 +29309,7 @@ END sky130_fd_sc_ls__mux2i_2
 
 MACRO sky130_fd_sc_ls__mux2i_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__mux2i_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.08000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -29448,7 +29479,7 @@ END sky130_fd_sc_ls__mux2i_4
 
 MACRO sky130_fd_sc_ls__mux4_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__mux4_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.600000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -29650,7 +29681,7 @@ END sky130_fd_sc_ls__mux4_1
 
 MACRO sky130_fd_sc_ls__mux4_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__mux4_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.56000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -29863,7 +29894,7 @@ END sky130_fd_sc_ls__mux4_2
 
 MACRO sky130_fd_sc_ls__mux4_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__mux4_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  16.80000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -30164,7 +30195,7 @@ END sky130_fd_sc_ls__mux4_4
 
 MACRO sky130_fd_sc_ls__nand2_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand2_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.440000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -30237,7 +30268,7 @@ END sky130_fd_sc_ls__nand2_1
 
 MACRO sky130_fd_sc_ls__nand2_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand2_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -30322,7 +30353,7 @@ END sky130_fd_sc_ls__nand2_2
 
 MACRO sky130_fd_sc_ls__nand2_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand2_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -30420,7 +30451,7 @@ END sky130_fd_sc_ls__nand2_4
 
 MACRO sky130_fd_sc_ls__nand2_8
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand2_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -30544,13 +30575,13 @@ END sky130_fd_sc_ls__nand2_8
 
 MACRO sky130_fd_sc_ls__nand2b_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand2b_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -30628,7 +30659,7 @@ END sky130_fd_sc_ls__nand2b_1
 
 MACRO sky130_fd_sc_ls__nand2b_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand2b_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -30726,7 +30757,7 @@ END sky130_fd_sc_ls__nand2b_2
 
 MACRO sky130_fd_sc_ls__nand2b_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand2b_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -30841,7 +30872,7 @@ END sky130_fd_sc_ls__nand2b_4
 
 MACRO sky130_fd_sc_ls__nand3_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand3_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -30929,7 +30960,7 @@ END sky130_fd_sc_ls__nand3_1
 
 MACRO sky130_fd_sc_ls__nand3_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand3_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -31039,7 +31070,7 @@ END sky130_fd_sc_ls__nand3_2
 
 MACRO sky130_fd_sc_ls__nand3_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand3_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.240000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -31164,13 +31195,13 @@ END sky130_fd_sc_ls__nand3_4
 
 MACRO sky130_fd_sc_ls__nand3b_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand3b_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -31261,7 +31292,7 @@ END sky130_fd_sc_ls__nand3b_1
 
 MACRO sky130_fd_sc_ls__nand3b_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand3b_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -31374,7 +31405,7 @@ END sky130_fd_sc_ls__nand3b_2
 
 MACRO sky130_fd_sc_ls__nand3b_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand3b_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.680000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -31511,7 +31542,7 @@ END sky130_fd_sc_ls__nand3b_4
 
 MACRO sky130_fd_sc_ls__nand4_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand4_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -31613,7 +31644,7 @@ END sky130_fd_sc_ls__nand4_1
 
 MACRO sky130_fd_sc_ls__nand4_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand4_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -31738,7 +31769,7 @@ END sky130_fd_sc_ls__nand4_2
 
 MACRO sky130_fd_sc_ls__nand4_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand4_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -31883,13 +31914,13 @@ END sky130_fd_sc_ls__nand4_4
 
 MACRO sky130_fd_sc_ls__nand4b_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand4b_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -31992,7 +32023,7 @@ END sky130_fd_sc_ls__nand4b_1
 
 MACRO sky130_fd_sc_ls__nand4b_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand4b_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -32128,7 +32159,7 @@ END sky130_fd_sc_ls__nand4b_2
 
 MACRO sky130_fd_sc_ls__nand4b_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand4b_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.120000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -32288,13 +32319,13 @@ END sky130_fd_sc_ls__nand4b_4
 
 MACRO sky130_fd_sc_ls__nand4bb_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand4bb_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -32303,7 +32334,7 @@ MACRO sky130_fd_sc_ls__nand4bb_1
     END
   END A_N
   PIN B_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -32412,7 +32443,7 @@ END sky130_fd_sc_ls__nand4bb_1
 
 MACRO sky130_fd_sc_ls__nand4bb_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand4bb_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.720000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -32564,7 +32595,7 @@ END sky130_fd_sc_ls__nand4bb_2
 
 MACRO sky130_fd_sc_ls__nand4bb_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nand4bb_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.08000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -32756,7 +32787,7 @@ END sky130_fd_sc_ls__nand4bb_4
 
 MACRO sky130_fd_sc_ls__nor2_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor2_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.440000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -32829,7 +32860,7 @@ END sky130_fd_sc_ls__nor2_1
 
 MACRO sky130_fd_sc_ls__nor2_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor2_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -32911,7 +32942,7 @@ END sky130_fd_sc_ls__nor2_2
 
 MACRO sky130_fd_sc_ls__nor2_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor2_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -33011,7 +33042,7 @@ END sky130_fd_sc_ls__nor2_4
 
 MACRO sky130_fd_sc_ls__nor2_8
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor2_8 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -33140,7 +33171,7 @@ END sky130_fd_sc_ls__nor2_8
 
 MACRO sky130_fd_sc_ls__nor2b_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor2b_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -33155,7 +33186,7 @@ MACRO sky130_fd_sc_ls__nor2b_1
     END
   END A
   PIN B_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -33223,7 +33254,7 @@ END sky130_fd_sc_ls__nor2b_1
 
 MACRO sky130_fd_sc_ls__nor2b_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor2b_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -33318,7 +33349,7 @@ END sky130_fd_sc_ls__nor2b_2
 
 MACRO sky130_fd_sc_ls__nor2b_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor2b_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.280000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -33436,7 +33467,7 @@ END sky130_fd_sc_ls__nor2b_4
 
 MACRO sky130_fd_sc_ls__nor3_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor3_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  1.920000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -33524,7 +33555,7 @@ END sky130_fd_sc_ls__nor3_1
 
 MACRO sky130_fd_sc_ls__nor3_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor3_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -33627,7 +33658,7 @@ END sky130_fd_sc_ls__nor3_2
 
 MACRO sky130_fd_sc_ls__nor3_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor3_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.720000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -33761,7 +33792,7 @@ END sky130_fd_sc_ls__nor3_4
 
 MACRO sky130_fd_sc_ls__nor3b_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor3b_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -33785,7 +33816,7 @@ MACRO sky130_fd_sc_ls__nor3b_1
     END
   END B
   PIN C_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -33857,7 +33888,7 @@ END sky130_fd_sc_ls__nor3b_1
 
 MACRO sky130_fd_sc_ls__nor3b_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor3b_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -33972,7 +34003,7 @@ END sky130_fd_sc_ls__nor3b_2
 
 MACRO sky130_fd_sc_ls__nor3b_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor3b_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.680000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -34120,7 +34151,7 @@ END sky130_fd_sc_ls__nor3b_4
 
 MACRO sky130_fd_sc_ls__nor4_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor4_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -34219,7 +34250,7 @@ END sky130_fd_sc_ls__nor4_1
 
 MACRO sky130_fd_sc_ls__nor4_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor4_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -34345,7 +34376,7 @@ END sky130_fd_sc_ls__nor4_2
 
 MACRO sky130_fd_sc_ls__nor4_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor4_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -34498,7 +34529,7 @@ END sky130_fd_sc_ls__nor4_4
 
 MACRO sky130_fd_sc_ls__nor4b_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor4b_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -34531,7 +34562,7 @@ MACRO sky130_fd_sc_ls__nor4b_1
     END
   END C
   PIN D_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -34606,7 +34637,7 @@ END sky130_fd_sc_ls__nor4b_1
 
 MACRO sky130_fd_sc_ls__nor4b_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor4b_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -34742,7 +34773,7 @@ END sky130_fd_sc_ls__nor4b_2
 
 MACRO sky130_fd_sc_ls__nor4b_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor4b_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.08000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -34920,7 +34951,7 @@ END sky130_fd_sc_ls__nor4b_4
 
 MACRO sky130_fd_sc_ls__nor4bb_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor4bb_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -34944,7 +34975,7 @@ MACRO sky130_fd_sc_ls__nor4bb_1
     END
   END B
   PIN C_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -34953,7 +34984,7 @@ MACRO sky130_fd_sc_ls__nor4bb_1
     END
   END C_N
   PIN D_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -35042,7 +35073,7 @@ END sky130_fd_sc_ls__nor4bb_1
 
 MACRO sky130_fd_sc_ls__nor4bb_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor4bb_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.200000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -35200,7 +35231,7 @@ END sky130_fd_sc_ls__nor4bb_2
 
 MACRO sky130_fd_sc_ls__nor4bb_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__nor4bb_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.04000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -35401,7 +35432,7 @@ END sky130_fd_sc_ls__nor4bb_4
 
 MACRO sky130_fd_sc_ls__o2111a_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o2111a_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -35524,7 +35555,7 @@ END sky130_fd_sc_ls__o2111a_1
 
 MACRO sky130_fd_sc_ls__o2111a_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o2111a_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -35653,7 +35684,7 @@ END sky130_fd_sc_ls__o2111a_2
 
 MACRO sky130_fd_sc_ls__o2111a_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o2111a_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -35825,7 +35856,7 @@ END sky130_fd_sc_ls__o2111a_4
 
 MACRO sky130_fd_sc_ls__o2111ai_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o2111ai_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -35938,7 +35969,7 @@ END sky130_fd_sc_ls__o2111ai_1
 
 MACRO sky130_fd_sc_ls__o2111ai_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o2111ai_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -36087,7 +36118,7 @@ END sky130_fd_sc_ls__o2111ai_2
 
 MACRO sky130_fd_sc_ls__o2111ai_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o2111ai_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.08000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -36262,7 +36293,7 @@ END sky130_fd_sc_ls__o2111ai_4
 
 MACRO sky130_fd_sc_ls__o211a_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o211a_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -36379,7 +36410,7 @@ END sky130_fd_sc_ls__o211a_1
 
 MACRO sky130_fd_sc_ls__o211a_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o211a_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -36495,7 +36526,7 @@ END sky130_fd_sc_ls__o211a_2
 
 MACRO sky130_fd_sc_ls__o211a_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o211a_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.720000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -36641,7 +36672,7 @@ END sky130_fd_sc_ls__o211a_4
 
 MACRO sky130_fd_sc_ls__o211ai_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o211ai_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -36745,7 +36776,7 @@ END sky130_fd_sc_ls__o211ai_1
 
 MACRO sky130_fd_sc_ls__o211ai_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o211ai_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -36872,7 +36903,7 @@ END sky130_fd_sc_ls__o211ai_2
 
 MACRO sky130_fd_sc_ls__o211ai_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o211ai_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -37025,7 +37056,7 @@ END sky130_fd_sc_ls__o211ai_4
 
 MACRO sky130_fd_sc_ls__o21a_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o21a_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -37121,7 +37152,7 @@ END sky130_fd_sc_ls__o21a_1
 
 MACRO sky130_fd_sc_ls__o21a_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o21a_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -37224,7 +37255,7 @@ END sky130_fd_sc_ls__o21a_2
 
 MACRO sky130_fd_sc_ls__o21a_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o21a_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -37353,7 +37384,7 @@ END sky130_fd_sc_ls__o21a_4
 
 MACRO sky130_fd_sc_ls__o21ai_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o21ai_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -37443,7 +37474,7 @@ END sky130_fd_sc_ls__o21ai_1
 
 MACRO sky130_fd_sc_ls__o21ai_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o21ai_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -37548,7 +37579,7 @@ END sky130_fd_sc_ls__o21ai_2
 
 MACRO sky130_fd_sc_ls__o21ai_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o21ai_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -37681,7 +37712,7 @@ END sky130_fd_sc_ls__o21ai_4
 
 MACRO sky130_fd_sc_ls__o21ba_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o21ba_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -37705,7 +37736,7 @@ MACRO sky130_fd_sc_ls__o21ba_1
     END
   END A2
   PIN B1_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -37788,7 +37819,7 @@ END sky130_fd_sc_ls__o21ba_1
 
 MACRO sky130_fd_sc_ls__o21ba_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o21ba_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -37812,7 +37843,7 @@ MACRO sky130_fd_sc_ls__o21ba_2
     END
   END A2
   PIN B1_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -37900,7 +37931,7 @@ END sky130_fd_sc_ls__o21ba_2
 
 MACRO sky130_fd_sc_ls__o21ba_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o21ba_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.240000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -38038,7 +38069,7 @@ END sky130_fd_sc_ls__o21ba_4
 
 MACRO sky130_fd_sc_ls__o21bai_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o21bai_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -38063,7 +38094,7 @@ MACRO sky130_fd_sc_ls__o21bai_1
     END
   END A2
   PIN B1_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -38138,7 +38169,7 @@ END sky130_fd_sc_ls__o21bai_1
 
 MACRO sky130_fd_sc_ls__o21bai_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o21bai_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -38255,7 +38286,7 @@ END sky130_fd_sc_ls__o21bai_2
 
 MACRO sky130_fd_sc_ls__o21bai_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o21bai_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.200000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -38401,7 +38432,7 @@ END sky130_fd_sc_ls__o21bai_4
 
 MACRO sky130_fd_sc_ls__o221a_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o221a_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -38528,7 +38559,7 @@ END sky130_fd_sc_ls__o221a_1
 
 MACRO sky130_fd_sc_ls__o221a_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o221a_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -38658,7 +38689,7 @@ END sky130_fd_sc_ls__o221a_2
 
 MACRO sky130_fd_sc_ls__o221a_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o221a_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.680000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -38828,7 +38859,7 @@ END sky130_fd_sc_ls__o221a_4
 
 MACRO sky130_fd_sc_ls__o221ai_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o221ai_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -38950,7 +38981,7 @@ END sky130_fd_sc_ls__o221ai_1
 
 MACRO sky130_fd_sc_ls__o221ai_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o221ai_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -39095,7 +39126,7 @@ END sky130_fd_sc_ls__o221ai_2
 
 MACRO sky130_fd_sc_ls__o221ai_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o221ai_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.08000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -39286,7 +39317,7 @@ END sky130_fd_sc_ls__o221ai_4
 
 MACRO sky130_fd_sc_ls__o22a_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o22a_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -39398,7 +39429,7 @@ END sky130_fd_sc_ls__o22a_1
 
 MACRO sky130_fd_sc_ls__o22a_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o22a_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -39514,7 +39545,7 @@ END sky130_fd_sc_ls__o22a_2
 
 MACRO sky130_fd_sc_ls__o22a_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o22a_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.720000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -39662,7 +39693,7 @@ END sky130_fd_sc_ls__o22a_4
 
 MACRO sky130_fd_sc_ls__o22ai_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o22ai_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -39763,7 +39794,7 @@ END sky130_fd_sc_ls__o22ai_1
 
 MACRO sky130_fd_sc_ls__o22ai_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o22ai_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -39896,7 +39927,7 @@ END sky130_fd_sc_ls__o22ai_2
 
 MACRO sky130_fd_sc_ls__o22ai_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o22ai_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -40063,7 +40094,7 @@ END sky130_fd_sc_ls__o22ai_4
 
 MACRO sky130_fd_sc_ls__o2bb2a_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o2bb2a_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -40184,7 +40215,7 @@ END sky130_fd_sc_ls__o2bb2a_1
 
 MACRO sky130_fd_sc_ls__o2bb2a_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o2bb2a_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -40308,7 +40339,7 @@ END sky130_fd_sc_ls__o2bb2a_2
 
 MACRO sky130_fd_sc_ls__o2bb2a_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o2bb2a_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.200000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -40464,7 +40495,7 @@ END sky130_fd_sc_ls__o2bb2a_4
 
 MACRO sky130_fd_sc_ls__o2bb2ai_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o2bb2ai_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -40574,7 +40605,7 @@ END sky130_fd_sc_ls__o2bb2ai_1
 
 MACRO sky130_fd_sc_ls__o2bb2ai_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o2bb2ai_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -40723,7 +40754,7 @@ END sky130_fd_sc_ls__o2bb2ai_2
 
 MACRO sky130_fd_sc_ls__o2bb2ai_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o2bb2ai_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.08000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -40904,7 +40935,7 @@ END sky130_fd_sc_ls__o2bb2ai_4
 
 MACRO sky130_fd_sc_ls__o311a_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o311a_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -41031,7 +41062,7 @@ END sky130_fd_sc_ls__o311a_1
 
 MACRO sky130_fd_sc_ls__o311a_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o311a_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -41159,7 +41190,7 @@ END sky130_fd_sc_ls__o311a_2
 
 MACRO sky130_fd_sc_ls__o311a_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o311a_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -41348,7 +41379,7 @@ END sky130_fd_sc_ls__o311a_4
 
 MACRO sky130_fd_sc_ls__o311ai_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o311ai_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -41462,7 +41493,7 @@ END sky130_fd_sc_ls__o311ai_1
 
 MACRO sky130_fd_sc_ls__o311ai_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o311ai_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -41604,7 +41635,7 @@ END sky130_fd_sc_ls__o311ai_2
 
 MACRO sky130_fd_sc_ls__o311ai_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o311ai_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.04000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -41793,7 +41824,7 @@ END sky130_fd_sc_ls__o311ai_4
 
 MACRO sky130_fd_sc_ls__o31a_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o31a_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -41901,7 +41932,7 @@ END sky130_fd_sc_ls__o31a_1
 
 MACRO sky130_fd_sc_ls__o31a_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o31a_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -42017,7 +42048,7 @@ END sky130_fd_sc_ls__o31a_2
 
 MACRO sky130_fd_sc_ls__o31a_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o31a_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.720000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -42162,7 +42193,7 @@ END sky130_fd_sc_ls__o31a_4
 
 MACRO sky130_fd_sc_ls__o31ai_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o31ai_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -42264,7 +42295,7 @@ END sky130_fd_sc_ls__o31ai_1
 
 MACRO sky130_fd_sc_ls__o31ai_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o31ai_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -42394,7 +42425,7 @@ END sky130_fd_sc_ls__o31ai_2
 
 MACRO sky130_fd_sc_ls__o31ai_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o31ai_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -42557,7 +42588,7 @@ END sky130_fd_sc_ls__o31ai_4
 
 MACRO sky130_fd_sc_ls__o32a_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o32a_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -42680,7 +42711,7 @@ END sky130_fd_sc_ls__o32a_1
 
 MACRO sky130_fd_sc_ls__o32a_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o32a_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -42809,7 +42840,7 @@ END sky130_fd_sc_ls__o32a_2
 
 MACRO sky130_fd_sc_ls__o32a_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o32a_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -42990,7 +43021,7 @@ END sky130_fd_sc_ls__o32a_4
 
 MACRO sky130_fd_sc_ls__o32ai_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o32ai_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -43103,7 +43134,7 @@ END sky130_fd_sc_ls__o32ai_1
 
 MACRO sky130_fd_sc_ls__o32ai_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o32ai_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.240000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -43252,7 +43283,7 @@ END sky130_fd_sc_ls__o32ai_2
 
 MACRO sky130_fd_sc_ls__o32ai_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o32ai_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.04000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -43440,7 +43471,7 @@ END sky130_fd_sc_ls__o32ai_4
 
 MACRO sky130_fd_sc_ls__o41a_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o41a_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -43564,7 +43595,7 @@ END sky130_fd_sc_ls__o41a_1
 
 MACRO sky130_fd_sc_ls__o41a_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o41a_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -43694,7 +43725,7 @@ END sky130_fd_sc_ls__o41a_2
 
 MACRO sky130_fd_sc_ls__o41a_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o41a_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -43867,7 +43898,7 @@ END sky130_fd_sc_ls__o41a_4
 
 MACRO sky130_fd_sc_ls__o41ai_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o41ai_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -43986,7 +44017,7 @@ END sky130_fd_sc_ls__o41ai_1
 
 MACRO sky130_fd_sc_ls__o41ai_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o41ai_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.240000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -44135,13 +44166,13 @@ END sky130_fd_sc_ls__o41ai_2
 
 MACRO sky130_fd_sc_ls__o41ai_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__o41ai_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.08000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A1
-    ANTENNAPARTIALMETALSIDEAREA  0.136000 ;
+    ANTENNAGATEAREA  1.116000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -44150,7 +44181,7 @@ MACRO sky130_fd_sc_ls__o41ai_4
     END
   END A1
   PIN A2
-    ANTENNAPARTIALMETALSIDEAREA  0.136000 ;
+    ANTENNAGATEAREA  1.116000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -44159,7 +44190,7 @@ MACRO sky130_fd_sc_ls__o41ai_4
     END
   END A2
   PIN A3
-    ANTENNAPARTIALMETALSIDEAREA  0.146000 ;
+    ANTENNAGATEAREA  1.116000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -44168,7 +44199,7 @@ MACRO sky130_fd_sc_ls__o41ai_4
     END
   END A3
   PIN A4
-    ANTENNAPARTIALMETALSIDEAREA  0.161000 ;
+    ANTENNAGATEAREA  1.116000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -44177,7 +44208,7 @@ MACRO sky130_fd_sc_ls__o41ai_4
     END
   END A4
   PIN B1
-    ANTENNAPARTIALMETALSIDEAREA  0.142000 ;
+    ANTENNAGATEAREA  0.780000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -44187,7 +44218,6 @@ MACRO sky130_fd_sc_ls__o41ai_4
   END B1
   PIN Y
     ANTENNADIFFAREA  1.586200 ;
-    ANTENNAPARTIALMETALSIDEAREA  1.389000 ;
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
@@ -44322,13 +44352,13 @@ END sky130_fd_sc_ls__o41ai_4
 
 MACRO sky130_fd_sc_ls__or2_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or2_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -44337,7 +44367,7 @@ MACRO sky130_fd_sc_ls__or2_1
     END
   END A
   PIN B
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -44406,7 +44436,7 @@ END sky130_fd_sc_ls__or2_1
 
 MACRO sky130_fd_sc_ls__or2_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or2_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.400000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -44491,7 +44521,7 @@ END sky130_fd_sc_ls__or2_2
 
 MACRO sky130_fd_sc_ls__or2_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or2_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -44596,13 +44626,13 @@ END sky130_fd_sc_ls__or2_4
 
 MACRO sky130_fd_sc_ls__or2b_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or2b_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -44611,7 +44641,7 @@ MACRO sky130_fd_sc_ls__or2b_1
     END
   END A
   PIN B_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -44690,7 +44720,7 @@ END sky130_fd_sc_ls__or2b_1
 
 MACRO sky130_fd_sc_ls__or2b_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or2b_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -44705,7 +44735,7 @@ MACRO sky130_fd_sc_ls__or2b_2
     END
   END A
   PIN B_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -44786,7 +44816,7 @@ END sky130_fd_sc_ls__or2b_2
 
 MACRO sky130_fd_sc_ls__or2b_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or2b_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -44906,13 +44936,13 @@ END sky130_fd_sc_ls__or2b_4
 
 MACRO sky130_fd_sc_ls__or3_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or3_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  2.880000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -44921,7 +44951,7 @@ MACRO sky130_fd_sc_ls__or3_1
     END
   END A
   PIN B
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -44930,7 +44960,7 @@ MACRO sky130_fd_sc_ls__or3_1
     END
   END B
   PIN C
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -45001,7 +45031,7 @@ END sky130_fd_sc_ls__or3_1
 
 MACRO sky130_fd_sc_ls__or3_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or3_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -45104,7 +45134,7 @@ END sky130_fd_sc_ls__or3_2
 
 MACRO sky130_fd_sc_ls__or3_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or3_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.280000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -45227,13 +45257,13 @@ END sky130_fd_sc_ls__or3_4
 
 MACRO sky130_fd_sc_ls__or3b_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or3b_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -45242,7 +45272,7 @@ MACRO sky130_fd_sc_ls__or3b_1
     END
   END A
   PIN B
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -45251,7 +45281,7 @@ MACRO sky130_fd_sc_ls__or3b_1
     END
   END B
   PIN C_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -45331,7 +45361,7 @@ END sky130_fd_sc_ls__or3b_1
 
 MACRO sky130_fd_sc_ls__or3b_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or3b_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -45355,7 +45385,7 @@ MACRO sky130_fd_sc_ls__or3b_2
     END
   END B
   PIN C_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -45441,7 +45471,7 @@ END sky130_fd_sc_ls__or3b_2
 
 MACRO sky130_fd_sc_ls__or3b_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or3b_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.760000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -45572,13 +45602,13 @@ END sky130_fd_sc_ls__or3b_4
 
 MACRO sky130_fd_sc_ls__or4_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or4_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -45587,7 +45617,7 @@ MACRO sky130_fd_sc_ls__or4_1
     END
   END A
   PIN B
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -45596,7 +45626,7 @@ MACRO sky130_fd_sc_ls__or4_1
     END
   END B
   PIN C
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -45605,7 +45635,7 @@ MACRO sky130_fd_sc_ls__or4_1
     END
   END C
   PIN D
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -45679,7 +45709,7 @@ END sky130_fd_sc_ls__or4_1
 
 MACRO sky130_fd_sc_ls__or4_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or4_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -45794,7 +45824,7 @@ END sky130_fd_sc_ls__or4_2
 
 MACRO sky130_fd_sc_ls__or4_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or4_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  6.720000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -45946,13 +45976,13 @@ END sky130_fd_sc_ls__or4_4
 
 MACRO sky130_fd_sc_ls__or4b_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or4b_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -45961,7 +45991,7 @@ MACRO sky130_fd_sc_ls__or4b_1
     END
   END A
   PIN B
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -45970,7 +46000,7 @@ MACRO sky130_fd_sc_ls__or4b_1
     END
   END B
   PIN C
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -45979,7 +46009,7 @@ MACRO sky130_fd_sc_ls__or4b_1
     END
   END C
   PIN D_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -46067,7 +46097,7 @@ END sky130_fd_sc_ls__or4b_1
 
 MACRO sky130_fd_sc_ls__or4b_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or4b_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.320000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -46100,7 +46130,7 @@ MACRO sky130_fd_sc_ls__or4b_2
     END
   END C
   PIN D_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -46191,7 +46221,7 @@ END sky130_fd_sc_ls__or4b_2
 
 MACRO sky130_fd_sc_ls__or4b_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or4b_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.200000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -46217,7 +46247,7 @@ MACRO sky130_fd_sc_ls__or4b_4
     END
   END B
   PIN C
-    ANTENNAPARTIALMETALSIDEAREA  1.197000 ;
+    ANTENNAGATEAREA  0.411000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -46355,13 +46385,13 @@ END sky130_fd_sc_ls__or4b_4
 
 MACRO sky130_fd_sc_ls__or4bb_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or4bb_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -46370,7 +46400,7 @@ MACRO sky130_fd_sc_ls__or4bb_1
     END
   END A
   PIN B
-    ANTENNAGATEAREA  0.233000 ;
+    ANTENNAGATEAREA  0.232500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -46379,7 +46409,7 @@ MACRO sky130_fd_sc_ls__or4bb_1
     END
   END B
   PIN C_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -46388,7 +46418,7 @@ MACRO sky130_fd_sc_ls__or4bb_1
     END
   END C_N
   PIN D_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -46485,7 +46515,7 @@ END sky130_fd_sc_ls__or4bb_1
 
 MACRO sky130_fd_sc_ls__or4bb_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or4bb_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -46510,7 +46540,7 @@ MACRO sky130_fd_sc_ls__or4bb_2
     END
   END B
   PIN C_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -46519,7 +46549,7 @@ MACRO sky130_fd_sc_ls__or4bb_2
     END
   END C_N
   PIN D_N
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -46617,7 +46647,7 @@ END sky130_fd_sc_ls__or4bb_2
 
 MACRO sky130_fd_sc_ls__or4bb_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__or4bb_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -46787,7 +46817,7 @@ END sky130_fd_sc_ls__or4bb_4
 
 MACRO sky130_fd_sc_ls__sdfbbn_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfbbn_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  16.80000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -46851,7 +46881,7 @@ MACRO sky130_fd_sc_ls__sdfbbn_1
     END
   END SCE
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  2.541000 ;
+    ANTENNAGATEAREA  0.469500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -47118,7 +47148,7 @@ END sky130_fd_sc_ls__sdfbbn_1
 
 MACRO sky130_fd_sc_ls__sdfbbn_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfbbn_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  18.24000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -47183,7 +47213,7 @@ MACRO sky130_fd_sc_ls__sdfbbn_2
     END
   END SCE
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  2.205000 ;
+    ANTENNAGATEAREA  0.469500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -47461,7 +47491,7 @@ END sky130_fd_sc_ls__sdfbbn_2
 
 MACRO sky130_fd_sc_ls__sdfbbp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfbbp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  15.84000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -47523,7 +47553,7 @@ MACRO sky130_fd_sc_ls__sdfbbp_1
     END
   END SCE
   PIN SET_B
-    ANTENNAGATEAREA  0.470000 ;
+    ANTENNAGATEAREA  0.469500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -47762,7 +47792,7 @@ END sky130_fd_sc_ls__sdfbbp_1
 
 MACRO sky130_fd_sc_ls__sdfrbp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfrbp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  13.92000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -48045,7 +48075,7 @@ END sky130_fd_sc_ls__sdfrbp_1
 
 MACRO sky130_fd_sc_ls__sdfrbp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfrbp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  14.88000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -48318,7 +48348,7 @@ END sky130_fd_sc_ls__sdfrbp_2
 
 MACRO sky130_fd_sc_ls__sdfrtn_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfrtn_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  13.92000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -48574,7 +48604,7 @@ END sky130_fd_sc_ls__sdfrtn_1
 
 MACRO sky130_fd_sc_ls__sdfrtp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfrtp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  13.44000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -48842,7 +48872,7 @@ END sky130_fd_sc_ls__sdfrtp_1
 
 MACRO sky130_fd_sc_ls__sdfrtp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfrtp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  14.40000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -49137,7 +49167,7 @@ END sky130_fd_sc_ls__sdfrtp_2
 
 MACRO sky130_fd_sc_ls__sdfrtp_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfrtp_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  14.88000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -49409,7 +49439,7 @@ END sky130_fd_sc_ls__sdfrtp_4
 
 MACRO sky130_fd_sc_ls__sdfsbp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfsbp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  14.40000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -49464,7 +49494,7 @@ MACRO sky130_fd_sc_ls__sdfsbp_1
     END
   END SCE
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  1.869000 ;
+    ANTENNAGATEAREA  0.252000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -49679,7 +49709,7 @@ END sky130_fd_sc_ls__sdfsbp_1
 
 MACRO sky130_fd_sc_ls__sdfsbp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfsbp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  17.76000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -49735,7 +49765,7 @@ MACRO sky130_fd_sc_ls__sdfsbp_2
     END
   END SCE
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  3.885000 ;
+    ANTENNAGATEAREA  0.252000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -49976,7 +50006,7 @@ END sky130_fd_sc_ls__sdfsbp_2
 
 MACRO sky130_fd_sc_ls__sdfstp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfstp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  13.92000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -50022,7 +50052,7 @@ MACRO sky130_fd_sc_ls__sdfstp_1
     END
   END SCE
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  2.541000 ;
+    ANTENNAGATEAREA  0.252000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -50238,7 +50268,7 @@ END sky130_fd_sc_ls__sdfstp_1
 
 MACRO sky130_fd_sc_ls__sdfstp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfstp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  14.88000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -50287,7 +50317,7 @@ MACRO sky130_fd_sc_ls__sdfstp_2
     END
   END SCE
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  3.213000 ;
+    ANTENNAGATEAREA  0.252000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -50509,7 +50539,7 @@ END sky130_fd_sc_ls__sdfstp_2
 
 MACRO sky130_fd_sc_ls__sdfstp_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfstp_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  15.84000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -50563,7 +50593,7 @@ MACRO sky130_fd_sc_ls__sdfstp_4
     END
   END SCE
   PIN SET_B
-    ANTENNAPARTIALMETALSIDEAREA  3.213000 ;
+    ANTENNAGATEAREA  0.252000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -50791,7 +50821,7 @@ END sky130_fd_sc_ls__sdfstp_4
 
 MACRO sky130_fd_sc_ls__sdfxbp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfxbp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  12.48000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -51025,7 +51055,7 @@ END sky130_fd_sc_ls__sdfxbp_1
 
 MACRO sky130_fd_sc_ls__sdfxbp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfxbp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  13.44000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -51271,7 +51301,7 @@ END sky130_fd_sc_ls__sdfxbp_2
 
 MACRO sky130_fd_sc_ls__sdfxtp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfxtp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.04000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -51485,9 +51515,9 @@ END sky130_fd_sc_ls__sdfxtp_1
 
 MACRO sky130_fd_sc_ls__sdfxtp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfxtp_2 ;
   ORIGIN  0.000000  0.000000 ;
-  SIZE 12 BY  3.330000 ;
+  SIZE  12.00000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN D
@@ -51702,7 +51732,7 @@ END sky130_fd_sc_ls__sdfxtp_2
 
 MACRO sky130_fd_sc_ls__sdfxtp_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdfxtp_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  12.48000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -51926,13 +51956,13 @@ END sky130_fd_sc_ls__sdfxtp_4
 
 MACRO sky130_fd_sc_ls__sdlclkp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdlclkp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  7.680000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN GATE
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -51952,7 +51982,7 @@ MACRO sky130_fd_sc_ls__sdlclkp_1
     END
   END GCLK
   PIN SCE
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -52087,13 +52117,13 @@ END sky130_fd_sc_ls__sdlclkp_1
 
 MACRO sky130_fd_sc_ls__sdlclkp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdlclkp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN GATE
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -52113,7 +52143,7 @@ MACRO sky130_fd_sc_ls__sdlclkp_2
     END
   END GCLK
   PIN SCE
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -52253,13 +52283,13 @@ END sky130_fd_sc_ls__sdlclkp_2
 
 MACRO sky130_fd_sc_ls__sdlclkp_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sdlclkp_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.600000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN GATE
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -52284,7 +52314,7 @@ MACRO sky130_fd_sc_ls__sdlclkp_4
     END
   END GCLK
   PIN SCE
-    ANTENNAGATEAREA  0.208000 ;
+    ANTENNAGATEAREA  0.208500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -52430,7 +52460,7 @@ END sky130_fd_sc_ls__sdlclkp_4
 
 MACRO sky130_fd_sc_ls__sedfxbp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sedfxbp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  16.32000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -52723,7 +52753,7 @@ END sky130_fd_sc_ls__sedfxbp_1
 
 MACRO sky130_fd_sc_ls__sedfxbp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sedfxbp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  17.28000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -53026,7 +53056,7 @@ END sky130_fd_sc_ls__sedfxbp_2
 
 MACRO sky130_fd_sc_ls__sedfxtp_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sedfxtp_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  15.36000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -53302,7 +53332,7 @@ END sky130_fd_sc_ls__sedfxtp_1
 
 MACRO sky130_fd_sc_ls__sedfxtp_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sedfxtp_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  16.32000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -53585,7 +53615,7 @@ END sky130_fd_sc_ls__sedfxtp_2
 
 MACRO sky130_fd_sc_ls__sedfxtp_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__sedfxtp_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  16.80000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -53873,11 +53903,25 @@ END sky130_fd_sc_ls__sedfxtp_4
 
 MACRO sky130_fd_sc_ls__tap_1
   CLASS CORE WELLTAP ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__tap_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  0.480000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
+  PIN VNB
+    ANTENNADIFFAREA  0.140250 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.090000 0.265000 0.390000 1.440000 ;
+    END
+  END VNB
+  PIN VPB
+    ANTENNADIFFAREA  0.142800 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.090000 1.890000 0.390000 3.065000 ;
+    END
+  END VPB
   PIN VGND
     DIRECTION INOUT ;
     SHAPE ABUTMENT ;
@@ -53909,11 +53953,25 @@ END sky130_fd_sc_ls__tap_1
 
 MACRO sky130_fd_sc_ls__tap_2
   CLASS CORE WELLTAP ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__tap_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  0.960000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
+  PIN VNB
+    ANTENNADIFFAREA  0.536250 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.090000 0.265000 0.870000 1.440000 ;
+    END
+  END VNB
+  PIN VPB
+    ANTENNADIFFAREA  0.546000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.090000 1.890000 0.870000 3.065000 ;
+    END
+  END VPB
   PIN VGND
     DIRECTION INOUT ;
     SHAPE ABUTMENT ;
@@ -53947,11 +54005,31 @@ END sky130_fd_sc_ls__tap_2
 
 MACRO sky130_fd_sc_ls__tapmet1_2
   CLASS CORE WELLTAP ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__tapmet1_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  0.960000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
+  PIN VNB
+    ANTENNADIFFAREA  0.536250 ;
+    PORT
+      LAYER met1 ;
+        RECT 0.080000 0.425000 0.400000 0.685000 ;
+    END
+  END VNB
+  PIN VPB
+    ANTENNADIFFAREA  0.546000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.090000 2.210000 0.870000 3.065000 ;
+      LAYER mcon ;
+        RECT 0.635000 2.690000 0.805000 2.860000 ;
+    END
+    PORT
+      LAYER met1 ;
+        RECT 0.560000 2.645000 0.880000 2.905000 ;
+    END
+  END VPB
   PIN VGND
     DIRECTION INOUT ;
     SHAPE ABUTMENT ;
@@ -53975,13 +54053,11 @@ MACRO sky130_fd_sc_ls__tapmet1_2
       RECT 0.000000 -0.085000 0.960000 0.085000 ;
       RECT 0.000000  3.245000 0.960000 3.415000 ;
       RECT 0.090000  0.265000 0.870000 1.105000 ;
-      RECT 0.090000  2.210000 0.870000 3.065000 ;
     LAYER mcon ;
       RECT 0.155000 -0.085000 0.325000 0.085000 ;
       RECT 0.155000  0.470000 0.325000 0.640000 ;
       RECT 0.155000  3.245000 0.325000 3.415000 ;
       RECT 0.635000 -0.085000 0.805000 0.085000 ;
-      RECT 0.635000  2.690000 0.805000 2.860000 ;
       RECT 0.635000  3.245000 0.805000 3.415000 ;
   END
 END sky130_fd_sc_ls__tapmet1_2
@@ -53989,11 +54065,18 @@ END sky130_fd_sc_ls__tapmet1_2
 
 MACRO sky130_fd_sc_ls__tapvgnd_1
   CLASS CORE WELLTAP ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__tapvgnd_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  0.480000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
+  PIN VPB
+    ANTENNADIFFAREA  0.142800 ;
+    PORT
+      LAYER met1 ;
+        RECT 0.080000 2.645000 0.400000 2.905000 ;
+    END
+  END VPB
   PIN VGND
     DIRECTION INOUT ;
     SHAPE ABUTMENT ;
@@ -54028,11 +54111,18 @@ END sky130_fd_sc_ls__tapvgnd_1
 
 MACRO sky130_fd_sc_ls__tapvgnd2_1
   CLASS CORE WELLTAP ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__tapvgnd2_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  0.480000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
+  PIN VPB
+    ANTENNADIFFAREA  0.142800 ;
+    PORT
+      LAYER met1 ;
+        RECT 0.080000 2.275000 0.400000 2.535000 ;
+    END
+  END VPB
   PIN VGND
     DIRECTION INOUT ;
     SHAPE ABUTMENT ;
@@ -54067,7 +54157,7 @@ END sky130_fd_sc_ls__tapvgnd2_1
 
 MACRO sky130_fd_sc_ls__tapvgndnovpb_1
   CLASS CORE WELLTAP ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__tapvgndnovpb_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  0.480000 BY  3.330000 ;
   SYMMETRY X Y R90 ;
@@ -54104,7 +54194,7 @@ END sky130_fd_sc_ls__tapvgndnovpb_1
 
 MACRO sky130_fd_sc_ls__tapvpwrvgnd_1
   CLASS CORE WELLTAP ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__tapvpwrvgnd_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  0.480000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -54142,7 +54232,7 @@ END sky130_fd_sc_ls__tapvpwrvgnd_1
 
 MACRO sky130_fd_sc_ls__xnor2_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__xnor2_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.360000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -54243,22 +54333,22 @@ END sky130_fd_sc_ls__xnor2_1
 
 MACRO sky130_fd_sc_ls__xnor2_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__xnor2_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  5.280000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAPARTIALMETALSIDEAREA  2.107000 ;
+    ANTENNAGATEAREA  0.819000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER li1 ;
-        RECT 3.005000 1.180000 3.355000 1.550000 ;
-        RECT 3.025000 1.550000 3.355000 1.720000 ;
-        RECT 3.025000 1.720000 4.675000 1.890000 ;
-        RECT 4.445000 1.350000 4.855000 1.680000 ;
-        RECT 4.445000 1.680000 4.675000 1.720000 ;
+      LAYER met1 ;
+        RECT 0.575000 1.180000 0.865000 1.225000 ;
+        RECT 0.575000 1.225000 3.265000 1.365000 ;
+        RECT 0.575000 1.365000 0.865000 1.410000 ;
+        RECT 2.975000 1.180000 3.265000 1.225000 ;
+        RECT 2.975000 1.365000 3.265000 1.410000 ;
     END
   END A
   PIN B
@@ -54331,12 +54421,17 @@ MACRO sky130_fd_sc_ls__xnor2_2
       RECT 2.640000  2.740000 2.970000 3.245000 ;
       RECT 2.755000  0.350000 3.085000 0.670000 ;
       RECT 2.755000  0.840000 3.085000 1.010000 ;
+      RECT 3.005000  1.180000 3.355000 1.550000 ;
+      RECT 3.025000  1.550000 3.355000 1.720000 ;
+      RECT 3.025000  1.720000 4.675000 1.890000 ;
       RECT 3.260000  2.740000 3.600000 2.905000 ;
       RECT 3.260000  2.905000 4.635000 3.075000 ;
       RECT 3.265000  0.085000 3.600000 0.500000 ;
       RECT 3.780000  0.490000 4.110000 0.670000 ;
       RECT 4.305000  2.400000 4.635000 2.905000 ;
       RECT 4.310000  0.085000 4.655000 0.500000 ;
+      RECT 4.445000  1.350000 4.855000 1.680000 ;
+      RECT 4.445000  1.680000 4.675000 1.720000 ;
       RECT 4.805000  2.400000 5.135000 3.245000 ;
       RECT 4.835000  0.490000 5.165000 0.670000 ;
     LAYER mcon ;
@@ -54364,30 +54459,28 @@ MACRO sky130_fd_sc_ls__xnor2_2
       RECT 4.475000  3.245000 4.645000 3.415000 ;
       RECT 4.955000 -0.085000 5.125000 0.085000 ;
       RECT 4.955000  3.245000 5.125000 3.415000 ;
-    LAYER met1 ;
-      RECT 0.575000 1.180000 0.865000 1.225000 ;
-      RECT 0.575000 1.225000 3.265000 1.365000 ;
-      RECT 0.575000 1.365000 0.865000 1.410000 ;
-      RECT 2.975000 1.180000 3.265000 1.225000 ;
-      RECT 2.975000 1.365000 3.265000 1.410000 ;
   END
 END sky130_fd_sc_ls__xnor2_2
 #--------EOF---------
 
 MACRO sky130_fd_sc_ls__xnor2_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__xnor2_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.120000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAPARTIALMETALSIDEAREA  2.779000 ;
+    ANTENNAGATEAREA  1.560000 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER li1 ;
-        RECT 4.445000 1.350000 5.835000 1.775000 ;
+      LAYER met1 ;
+        RECT 1.055000 1.550000 1.345000 1.595000 ;
+        RECT 1.055000 1.595000 4.705000 1.735000 ;
+        RECT 1.055000 1.735000 1.345000 1.780000 ;
+        RECT 4.415000 1.550000 4.705000 1.595000 ;
+        RECT 4.415000 1.735000 4.705000 1.780000 ;
     END
   END A
   PIN B
@@ -54466,6 +54559,7 @@ MACRO sky130_fd_sc_ls__xnor2_4
       RECT 3.080000  2.965000 3.410000 3.245000 ;
       RECT 3.535000  0.425000 3.865000 0.840000 ;
       RECT 3.580000  2.795000 4.590000 2.955000 ;
+      RECT 4.445000  1.350000 5.835000 1.775000 ;
       RECT 4.560000  0.425000 4.890000 0.670000 ;
       RECT 4.560000  0.670000 9.005000 0.840000 ;
       RECT 4.810000  2.625000 7.125000 2.795000 ;
@@ -54527,19 +54621,13 @@ MACRO sky130_fd_sc_ls__xnor2_4
       RECT 8.315000  3.245000 8.485000 3.415000 ;
       RECT 8.795000 -0.085000 8.965000 0.085000 ;
       RECT 8.795000  3.245000 8.965000 3.415000 ;
-    LAYER met1 ;
-      RECT 1.055000 1.550000 1.345000 1.595000 ;
-      RECT 1.055000 1.595000 4.705000 1.735000 ;
-      RECT 1.055000 1.735000 1.345000 1.780000 ;
-      RECT 4.415000 1.550000 4.705000 1.595000 ;
-      RECT 4.415000 1.735000 4.705000 1.780000 ;
   END
 END sky130_fd_sc_ls__xnor2_4
 #--------EOF---------
 
 MACRO sky130_fd_sc_ls__xnor3_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__xnor3_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.160000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -54731,7 +54819,7 @@ END sky130_fd_sc_ls__xnor3_1
 
 MACRO sky130_fd_sc_ls__xnor3_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__xnor3_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -54926,7 +55014,7 @@ END sky130_fd_sc_ls__xnor3_2
 
 MACRO sky130_fd_sc_ls__xnor3_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__xnor3_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.08000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -55139,13 +55227,13 @@ END sky130_fd_sc_ls__xnor3_4
 
 MACRO sky130_fd_sc_ls__xor2_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__xor2_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  3.840000 BY  3.330000 ;
   SYMMETRY X Y ;
   SITE unit ;
   PIN A
-    ANTENNAGATEAREA  0.512000 ;
+    ANTENNAGATEAREA  0.511500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -55154,7 +55242,7 @@ MACRO sky130_fd_sc_ls__xor2_1
     END
   END A
   PIN B
-    ANTENNAGATEAREA  0.512000 ;
+    ANTENNAGATEAREA  0.511500 ;
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -55235,7 +55323,7 @@ END sky130_fd_sc_ls__xor2_1
 
 MACRO sky130_fd_sc_ls__xor2_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__xor2_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  4.800000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -55350,7 +55438,7 @@ END sky130_fd_sc_ls__xor2_2
 
 MACRO sky130_fd_sc_ls__xor2_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__xor2_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  8.640000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -55514,7 +55602,7 @@ END sky130_fd_sc_ls__xor2_4
 
 MACRO sky130_fd_sc_ls__xor3_1
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__xor3_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.120000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -55700,7 +55788,7 @@ END sky130_fd_sc_ls__xor3_1
 
 MACRO sky130_fd_sc_ls__xor3_2
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__xor3_2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  9.600000 BY  3.330000 ;
   SYMMETRY X Y ;
@@ -55895,7 +55983,7 @@ END sky130_fd_sc_ls__xor3_2
 
 MACRO sky130_fd_sc_ls__xor3_4
   CLASS CORE ;
-  SOURCE USER ;
+  FOREIGN sky130_fd_sc_ls__xor3_4 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  10.56000 BY  3.330000 ;
   SYMMETRY X Y ;

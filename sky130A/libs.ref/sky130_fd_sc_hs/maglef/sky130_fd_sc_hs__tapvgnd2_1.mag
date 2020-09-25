@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1599588232
+timestamp 1601050075
 << obsli1 >>
 rect 0 649 31 683
 rect 65 649 96 683
@@ -21,7 +21,6 @@ rect 0 683 96 715
 rect 0 649 31 683
 rect 65 649 96 683
 rect 0 617 96 649
-rect 0 616 50 617
 rect 16 498 80 507
 rect 16 464 31 498
 rect 65 464 80 498
@@ -33,8 +32,6 @@ rect 0 -49 96 -17
 << labels >>
 rlabel metal1 s 0 -49 96 49 8 VGND
 port 1 nsew ground bidirectional
-rlabel metal1 s 0 616 50 666 6 VPB
-port 2 nsew power bidirectional
 rlabel metal1 s 16 455 80 507 6 VPB
 port 2 nsew power bidirectional
 rlabel metal1 s 0 617 96 715 6 VPWR

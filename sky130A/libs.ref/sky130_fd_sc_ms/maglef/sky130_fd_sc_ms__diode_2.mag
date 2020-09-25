@@ -1,0 +1,44 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1601050088
+<< locali >>
+rect 19 53 173 613
+<< obsli1 >>
+rect 0 649 31 683
+rect 65 649 127 683
+rect 161 649 192 683
+rect 0 -17 31 17
+rect 65 -17 127 17
+rect 161 -17 192 17
+<< obsli1c >>
+rect 31 649 65 683
+rect 127 649 161 683
+rect 31 -17 65 17
+rect 127 -17 161 17
+<< metal1 >>
+rect 0 683 192 715
+rect 0 649 31 683
+rect 65 649 127 683
+rect 161 649 192 683
+rect 0 617 192 649
+rect 0 17 192 49
+rect 0 -17 31 17
+rect 65 -17 127 17
+rect 161 -17 192 17
+rect 0 -49 192 -17
+<< labels >>
+rlabel locali s 19 53 173 613 6 DIODE
+port 1 nsew
+rlabel metal1 s 0 -49 192 49 8 VGND
+port 2 nsew ground default
+rlabel metal1 s 0 617 192 715 6 VPWR
+port 3 nsew power default
+<< properties >>
+string LEFclass BLOCK
+string FIXED_BBOX 0 0 192 666
+string LEFview TRUE
+string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_ms/gds/sky130_fd_sc_ms.gds
+string GDS_END 2930638
+string GDS_START 2926820
+<< end >>

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1599588209
+timestamp 1601050047
 << nwell >>
 rect -38 332 1478 704
 << pwell >>
@@ -710,7 +710,7 @@ rlabel comment s 0 0 0 0 4 or4b_4
 flabel comment s 680 282 680 282 0 FreeSans 200 0 0 0 no_jumper_check
 flabel pwell s 0 0 1440 49 0 FreeSans 200 0 0 0 VNB
 port 6 nsew
-flabel nwell s 0 617 1440 666 0 FreeSans 200 0 0 0 VPB
+flabel nbase s 0 617 1440 666 0 FreeSans 200 0 0 0 VPB
 port 7 nsew
 flabel metal1 s 511 242 545 276 0 FreeSans 340 0 0 0 C
 port 3 nsew

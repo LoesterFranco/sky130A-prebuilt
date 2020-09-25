@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1599588232
+timestamp 1601050075
 << locali >>
 rect 112 378 178 547
 rect 292 378 358 547
@@ -160,8 +160,6 @@ rect 1601 649 1663 683
 rect 1697 649 1759 683
 rect 1793 649 1824 683
 rect 0 617 1824 649
-rect 0 616 50 617
-rect 0 49 50 50
 rect 0 17 1824 49
 rect 0 -17 31 17
 rect 65 -17 127 17
@@ -217,12 +215,8 @@ rlabel locali s 112 344 839 378 6 Z
 port 3 nsew signal output
 rlabel metal1 s 0 -49 1824 49 8 VGND
 port 4 nsew ground bidirectional
-rlabel metal1 s 0 0 50 50 6 VNB
-port 5 nsew ground bidirectional
-rlabel metal1 s 0 616 50 666 6 VPB
-port 6 nsew power bidirectional
 rlabel metal1 s 0 617 1824 715 6 VPWR
-port 7 nsew power bidirectional
+port 5 nsew power bidirectional
 << properties >>
 string LEFsite unit
 string LEFclass CORE

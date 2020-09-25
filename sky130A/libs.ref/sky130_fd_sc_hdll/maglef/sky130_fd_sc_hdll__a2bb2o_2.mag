@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1599588227
+timestamp 1601050070
 << locali >>
 rect 0 527 29 561
 rect 63 527 121 561
@@ -39,6 +39,27 @@ rect 615 -17 673 17
 rect 707 -17 765 17
 rect 799 -17 857 17
 rect 891 -17 920 17
+<< viali >>
+rect 29 527 63 561
+rect 121 527 155 561
+rect 213 527 247 561
+rect 305 527 339 561
+rect 397 527 431 561
+rect 489 527 523 561
+rect 581 527 615 561
+rect 673 527 707 561
+rect 765 527 799 561
+rect 857 527 891 561
+rect 29 -17 63 17
+rect 121 -17 155 17
+rect 213 -17 247 17
+rect 305 -17 339 17
+rect 397 -17 431 17
+rect 489 -17 523 17
+rect 581 -17 615 17
+rect 673 -17 707 17
+rect 765 -17 799 17
+rect 857 -17 891 17
 << obsli1 >>
 rect 540 474 574 493
 rect 328 440 574 474
@@ -60,27 +81,6 @@ rect 657 367 863 401
 rect 576 140 656 174
 rect 353 51 387 131
 rect 622 51 656 140
-<< obsli1c >>
-rect 29 527 63 561
-rect 121 527 155 561
-rect 213 527 247 561
-rect 305 527 339 561
-rect 397 527 431 561
-rect 489 527 523 561
-rect 581 527 615 561
-rect 673 527 707 561
-rect 765 527 799 561
-rect 857 527 891 561
-rect 29 -17 63 17
-rect 121 -17 155 17
-rect 213 -17 247 17
-rect 305 -17 339 17
-rect 397 -17 431 17
-rect 489 -17 523 17
-rect 581 -17 615 17
-rect 673 -17 707 17
-rect 765 -17 799 17
-rect 857 -17 891 17
 << metal1 >>
 rect 0 561 920 592
 rect 0 527 29 561
@@ -123,7 +123,25 @@ rlabel locali s 105 162 149 305 6 X
 port 5 nsew signal output
 rlabel locali s 105 51 166 162 6 X
 port 5 nsew signal output
-rlabel metal1 s 0 -48 920 48 8 VGND
+rlabel viali s 857 -17 891 17 8 VGND
+port 6 nsew ground bidirectional
+rlabel viali s 765 -17 799 17 8 VGND
+port 6 nsew ground bidirectional
+rlabel viali s 673 -17 707 17 8 VGND
+port 6 nsew ground bidirectional
+rlabel viali s 581 -17 615 17 8 VGND
+port 6 nsew ground bidirectional
+rlabel viali s 489 -17 523 17 8 VGND
+port 6 nsew ground bidirectional
+rlabel viali s 397 -17 431 17 8 VGND
+port 6 nsew ground bidirectional
+rlabel viali s 305 -17 339 17 8 VGND
+port 6 nsew ground bidirectional
+rlabel viali s 213 -17 247 17 8 VGND
+port 6 nsew ground bidirectional
+rlabel viali s 121 -17 155 17 8 VGND
+port 6 nsew ground bidirectional
+rlabel viali s 29 -17 63 17 8 VGND
 port 6 nsew ground bidirectional
 rlabel locali s 781 17 871 119 6 VGND
 port 6 nsew ground bidirectional
@@ -135,7 +153,27 @@ rlabel locali s 37 17 71 186 6 VGND
 port 6 nsew ground bidirectional
 rlabel locali s 0 -17 920 17 8 VGND
 port 6 nsew ground bidirectional
-rlabel metal1 s 0 496 920 592 6 VPWR
+rlabel metal1 s 0 -48 920 48 8 VGND
+port 6 nsew ground bidirectional
+rlabel viali s 857 527 891 561 6 VPWR
+port 7 nsew power bidirectional
+rlabel viali s 765 527 799 561 6 VPWR
+port 7 nsew power bidirectional
+rlabel viali s 673 527 707 561 6 VPWR
+port 7 nsew power bidirectional
+rlabel viali s 581 527 615 561 6 VPWR
+port 7 nsew power bidirectional
+rlabel viali s 489 527 523 561 6 VPWR
+port 7 nsew power bidirectional
+rlabel viali s 397 527 431 561 6 VPWR
+port 7 nsew power bidirectional
+rlabel viali s 305 527 339 561 6 VPWR
+port 7 nsew power bidirectional
+rlabel viali s 213 527 247 561 6 VPWR
+port 7 nsew power bidirectional
+rlabel viali s 121 527 155 561 6 VPWR
+port 7 nsew power bidirectional
+rlabel viali s 29 527 63 561 6 VPWR
 port 7 nsew power bidirectional
 rlabel locali s 735 435 785 527 6 VPWR
 port 7 nsew power bidirectional
@@ -144,6 +182,8 @@ port 7 nsew power bidirectional
 rlabel locali s 37 289 71 527 6 VPWR
 port 7 nsew power bidirectional
 rlabel locali s 0 527 920 561 6 VPWR
+port 7 nsew power bidirectional
+rlabel metal1 s 0 496 920 592 6 VPWR
 port 7 nsew power bidirectional
 << properties >>
 string LEFsite unithd

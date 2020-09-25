@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1599588205
+timestamp 1601050043
 << nwell >>
 rect -38 261 3442 582
 << pwell >>
@@ -1693,23 +1693,23 @@ flabel pwell s 857 -17 891 17 0 FreeSans 200 180 0 0 VNB
 port 18 nsew
 flabel pwell s 874 0 874 0 0 FreeSans 200 0 0 0 VNB
 port 18 nsew
-flabel nwell s 29 527 63 561 0 FreeSans 200 0 0 0 VPB
+flabel nbase s 29 527 63 561 0 FreeSans 200 0 0 0 VPB
 port 19 nsew
-flabel nwell s 3341 527 3375 561 0 FreeSans 200 180 0 0 VPB
+flabel nbase s 3341 527 3375 561 0 FreeSans 200 180 0 0 VPB
 port 19 nsew
-flabel nwell s 46 544 46 544 0 FreeSans 200 0 0 0 VPB
+flabel nbase s 46 544 46 544 0 FreeSans 200 0 0 0 VPB
 port 19 nsew
-flabel nwell s 2513 527 2547 561 0 FreeSans 200 0 0 0 VPB
+flabel nbase s 2513 527 2547 561 0 FreeSans 200 0 0 0 VPB
 port 19 nsew
-flabel nwell s 2530 544 2530 544 0 FreeSans 200 180 0 0 VPB
+flabel nbase s 2530 544 2530 544 0 FreeSans 200 180 0 0 VPB
 port 19 nsew
-flabel nwell s 1685 527 1719 561 0 FreeSans 200 180 0 0 VPB
+flabel nbase s 1685 527 1719 561 0 FreeSans 200 180 0 0 VPB
 port 19 nsew
-flabel nwell s 1702 544 1702 544 0 FreeSans 200 0 0 0 VPB
+flabel nbase s 1702 544 1702 544 0 FreeSans 200 0 0 0 VPB
 port 19 nsew
-flabel nwell s 857 527 891 561 0 FreeSans 200 180 0 0 VPB
+flabel nbase s 857 527 891 561 0 FreeSans 200 180 0 0 VPB
 port 19 nsew
-flabel nwell s 874 544 874 544 0 FreeSans 200 0 0 0 VPB
+flabel nbase s 874 544 874 544 0 FreeSans 200 0 0 0 VPB
 port 19 nsew
 flabel corelocali s 121 85 155 119 0 FreeSans 200 0 0 0 D[0]
 port 8 nsew

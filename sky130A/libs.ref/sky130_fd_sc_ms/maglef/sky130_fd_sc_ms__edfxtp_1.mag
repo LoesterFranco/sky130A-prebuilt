@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1599588244
+timestamp 1601050088
 << locali >>
 rect 85 196 161 398
 rect 303 222 369 288
@@ -63,9 +63,7 @@ rect 409 390 654 424
 rect 195 322 477 356
 rect 195 188 261 322
 rect 411 277 477 322
-rect 511 350 586 356
-rect 545 316 586 350
-rect 511 209 586 316
+rect 511 209 586 356
 rect 17 68 106 162
 rect 195 154 364 188
 rect 620 175 654 390
@@ -119,10 +117,7 @@ rect 1518 85 1552 187
 rect 1586 119 1620 255
 rect 1822 241 2121 275
 rect 2155 267 2189 351
-rect 2329 350 2377 419
-rect 2329 316 2335 350
-rect 2369 316 2377 350
-rect 2329 310 2377 316
+rect 2329 310 2377 419
 rect 2521 364 2571 649
 rect 1822 221 1856 241
 rect 1654 187 1856 221
@@ -192,8 +187,6 @@ rect 2239 649 2273 683
 rect 2335 649 2369 683
 rect 2431 649 2465 683
 rect 2527 649 2561 683
-rect 511 316 545 350
-rect 2335 316 2369 350
 rect 31 -17 65 17
 rect 127 -17 161 17
 rect 223 -17 257 17
@@ -252,8 +245,6 @@ rect 2369 649 2431 683
 rect 2465 649 2527 683
 rect 2561 649 2592 683
 rect 0 617 2592 649
-rect 0 616 50 617
-rect 0 49 50 50
 rect 0 17 2592 49
 rect 0 -17 31 17
 rect 65 -17 127 17
@@ -285,17 +276,11 @@ rect 2465 -17 2527 17
 rect 2561 -17 2592 17
 rect 0 -49 2592 -17
 << obsm1 >>
-rect 499 350 557 356
-rect 499 316 511 350
-rect 545 347 557 350
-rect 2323 350 2381 356
-rect 2323 347 2335 350
-rect 545 319 2335 347
-rect 545 316 557 319
-rect 499 310 557 316
-rect 2323 316 2335 319
-rect 2369 316 2381 350
-rect 2323 310 2381 316
+rect 499 347 557 356
+rect 2323 347 2381 356
+rect 499 319 2381 347
+rect 499 310 557 319
+rect 2323 310 2381 319
 << labels >>
 rlabel locali s 85 196 161 398 6 D
 port 1 nsew signal input
@@ -311,12 +296,8 @@ rlabel locali s 690 236 756 310 6 CLK
 port 4 nsew clock input
 rlabel metal1 s 0 -49 2592 49 8 VGND
 port 5 nsew ground bidirectional
-rlabel metal1 s 0 0 50 50 6 VNB
-port 6 nsew ground bidirectional
-rlabel metal1 s 0 616 50 666 6 VPB
-port 7 nsew power bidirectional
 rlabel metal1 s 0 617 2592 715 6 VPWR
-port 8 nsew power bidirectional
+port 6 nsew power bidirectional
 << properties >>
 string LEFsite unit
 string LEFclass CORE

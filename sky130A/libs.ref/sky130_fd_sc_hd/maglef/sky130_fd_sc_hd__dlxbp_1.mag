@@ -1,64 +1,65 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1599588220
+timestamp 1601050058
 << locali >>
-rect 0 527 1380 561
-rect 103 427 169 527
 rect 17 197 66 325
-rect 103 17 169 93
-rect 393 367 449 527
-rect 756 435 796 527
 rect 271 191 337 265
-rect 937 314 994 527
 rect 1028 334 1098 491
 rect 1064 164 1098 334
-rect 375 17 441 89
-rect 740 17 809 106
-rect 944 17 994 143
 rect 1028 51 1098 164
-rect 1218 367 1277 527
 rect 1311 289 1363 493
 rect 1320 165 1363 289
-rect 1218 17 1277 109
 rect 1311 51 1363 165
-rect 0 -17 1380 17
 << obsli1 >>
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 213 561
+rect 247 527 305 561
+rect 339 527 397 561
+rect 431 527 489 561
+rect 523 527 581 561
+rect 615 527 673 561
+rect 707 527 765 561
+rect 799 527 857 561
+rect 891 527 949 561
+rect 983 527 1041 561
+rect 1075 527 1133 561
+rect 1167 527 1225 561
+rect 1259 527 1317 561
+rect 1351 527 1380 561
 rect 35 393 69 493
+rect 103 427 169 527
 rect 35 359 156 393
-rect 122 323 156 359
-rect 122 280 156 289
-rect 203 391 248 493
-rect 203 357 214 391
-rect 203 337 248 357
+rect 122 280 156 359
+rect 203 337 248 493
 rect 122 214 168 280
 rect 122 161 156 214
 rect 35 127 156 161
 rect 35 69 69 127
+rect 103 17 169 93
 rect 203 69 237 337
 rect 286 333 359 483
+rect 393 367 449 527
 rect 550 451 722 485
 rect 685 418 722 451
+rect 756 435 796 527
 rect 685 413 726 418
 rect 685 407 730 413
 rect 686 404 730 407
 rect 687 402 730 404
 rect 688 399 730 402
-rect 593 391 639 399
-rect 627 382 639 391
-rect 627 357 658 382
+rect 593 382 639 399
 rect 286 299 423 333
 rect 371 247 423 299
-rect 493 323 559 337
-rect 493 289 511 323
-rect 545 289 559 323
-rect 493 271 559 289
-rect 593 315 658 357
+rect 493 271 559 337
+rect 593 315 658 382
 rect 371 175 467 247
 rect 593 213 627 315
 rect 692 265 730 399
 rect 857 373 903 487
 rect 764 307 903 373
+rect 937 314 994 527
 rect 869 265 903 307
 rect 692 233 835 265
 rect 371 157 427 175
@@ -69,42 +70,111 @@ rect 869 199 1030 265
 rect 302 69 341 123
 rect 661 107 695 199
 rect 869 149 910 199
+rect 375 17 441 89
 rect 560 73 695 107
+rect 740 17 809 106
 rect 857 83 910 149
+rect 944 17 994 143
 rect 1132 265 1182 493
+rect 1218 367 1277 527
 rect 1132 199 1286 265
 rect 1132 51 1182 199
+rect 1218 17 1277 109
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 213 17
+rect 247 -17 305 17
+rect 339 -17 397 17
+rect 431 -17 489 17
+rect 523 -17 581 17
+rect 615 -17 673 17
+rect 707 -17 765 17
+rect 799 -17 857 17
+rect 891 -17 949 17
+rect 983 -17 1041 17
+rect 1075 -17 1133 17
+rect 1167 -17 1225 17
+rect 1259 -17 1317 17
+rect 1351 -17 1380 17
 << obsli1c >>
-rect 122 289 156 323
-rect 214 357 248 391
-rect 593 357 627 391
-rect 511 289 545 323
+rect 29 527 63 561
+rect 121 527 155 561
+rect 213 527 247 561
+rect 305 527 339 561
+rect 397 527 431 561
+rect 489 527 523 561
+rect 581 527 615 561
+rect 673 527 707 561
+rect 765 527 799 561
+rect 857 527 891 561
+rect 949 527 983 561
+rect 1041 527 1075 561
+rect 1133 527 1167 561
+rect 1225 527 1259 561
+rect 1317 527 1351 561
+rect 29 -17 63 17
+rect 121 -17 155 17
+rect 213 -17 247 17
+rect 305 -17 339 17
+rect 397 -17 431 17
+rect 489 -17 523 17
+rect 581 -17 615 17
+rect 673 -17 707 17
+rect 765 -17 799 17
+rect 857 -17 891 17
+rect 949 -17 983 17
+rect 1041 -17 1075 17
+rect 1133 -17 1167 17
+rect 1225 -17 1259 17
+rect 1317 -17 1351 17
 << metal1 >>
-rect 0 496 1380 592
-rect 0 -48 1380 48
+rect 0 561 1380 592
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 213 561
+rect 247 527 305 561
+rect 339 527 397 561
+rect 431 527 489 561
+rect 523 527 581 561
+rect 615 527 673 561
+rect 707 527 765 561
+rect 799 527 857 561
+rect 891 527 949 561
+rect 983 527 1041 561
+rect 1075 527 1133 561
+rect 1167 527 1225 561
+rect 1259 527 1317 561
+rect 1351 527 1380 561
+rect 0 496 1380 527
+rect 0 17 1380 48
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 213 17
+rect 247 -17 305 17
+rect 339 -17 397 17
+rect 431 -17 489 17
+rect 523 -17 581 17
+rect 615 -17 673 17
+rect 707 -17 765 17
+rect 799 -17 857 17
+rect 891 -17 949 17
+rect 983 -17 1041 17
+rect 1075 -17 1133 17
+rect 1167 -17 1225 17
+rect 1259 -17 1317 17
+rect 1351 -17 1380 17
+rect 0 -48 1380 -17
 << obsm1 >>
-rect 202 391 260 397
-rect 202 357 214 391
-rect 248 388 260 391
-rect 581 391 639 397
-rect 581 388 593 391
-rect 248 360 593 388
-rect 248 357 260 360
-rect 202 351 260 357
-rect 581 357 593 360
-rect 627 357 639 391
-rect 581 351 639 357
-rect 110 323 168 329
-rect 110 289 122 323
-rect 156 320 168 323
-rect 499 323 557 329
-rect 499 320 511 323
-rect 156 292 511 320
-rect 156 289 168 292
-rect 110 283 168 289
-rect 499 289 511 292
-rect 545 289 557 323
-rect 499 283 557 289
+rect 202 388 260 397
+rect 581 388 639 397
+rect 202 360 639 388
+rect 202 351 260 360
+rect 581 351 639 360
+rect 110 320 168 329
+rect 499 320 557 329
+rect 110 292 557 320
+rect 110 283 168 292
+rect 499 283 557 292
 << labels >>
 rlabel locali s 271 191 337 265 6 D
 port 1 nsew signal input
@@ -122,32 +192,8 @@ rlabel locali s 1311 51 1363 165 6 Q_N
 port 3 nsew signal output
 rlabel locali s 17 197 66 325 6 GATE
 port 4 nsew clock input
-rlabel locali s 1218 17 1277 109 6 VGND
-port 5 nsew ground bidirectional abutment
-rlabel locali s 944 17 994 143 6 VGND
-port 5 nsew ground bidirectional abutment
-rlabel locali s 740 17 809 106 6 VGND
-port 5 nsew ground bidirectional abutment
-rlabel locali s 375 17 441 89 6 VGND
-port 5 nsew ground bidirectional abutment
-rlabel locali s 103 17 169 93 6 VGND
-port 5 nsew ground bidirectional abutment
-rlabel locali s 0 -17 1380 17 8 VGND
-port 5 nsew ground bidirectional abutment
 rlabel metal1 s 0 -48 1380 48 8 VGND
 port 5 nsew ground bidirectional abutment
-rlabel locali s 1218 367 1277 527 6 VPWR
-port 6 nsew power bidirectional abutment
-rlabel locali s 937 314 994 527 6 VPWR
-port 6 nsew power bidirectional abutment
-rlabel locali s 756 435 796 527 6 VPWR
-port 6 nsew power bidirectional abutment
-rlabel locali s 393 367 449 527 6 VPWR
-port 6 nsew power bidirectional abutment
-rlabel locali s 103 427 169 527 6 VPWR
-port 6 nsew power bidirectional abutment
-rlabel locali s 0 527 1380 561 6 VPWR
-port 6 nsew power bidirectional abutment
 rlabel metal1 s 0 496 1380 592 6 VPWR
 port 6 nsew power bidirectional abutment
 << properties >>

@@ -1,23 +1,37 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1599588220
+timestamp 1601050058
 << locali >>
-rect 0 527 184 561
 rect 17 51 167 493
-rect 0 -17 184 17
+<< obsli1 >>
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 184 561
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 184 17
+<< obsli1c >>
+rect 29 527 63 561
+rect 121 527 155 561
+rect 29 -17 63 17
+rect 121 -17 155 17
 << metal1 >>
-rect 0 496 184 592
-rect 0 -48 184 48
+rect 0 561 184 592
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 184 561
+rect 0 496 184 527
+rect 0 17 184 48
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 184 17
+rect 0 -48 184 -17
 << labels >>
 rlabel locali s 17 51 167 493 6 DIODE
 port 1 nsew signal input
-rlabel locali s 0 -17 184 17 8 VGND
-port 2 nsew ground bidirectional abutment
 rlabel metal1 s 0 -48 184 48 8 VGND
 port 2 nsew ground bidirectional abutment
-rlabel locali s 0 527 184 561 6 VPWR
-port 3 nsew power bidirectional abutment
 rlabel metal1 s 0 496 184 592 6 VPWR
 port 3 nsew power bidirectional abutment
 << properties >>

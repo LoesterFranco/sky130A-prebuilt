@@ -57,7 +57,6 @@ if skywater_commit is not None:
         raise IOError("commit pattern not found \"skywater-pdk is\"")
     commit[0] = commit[0].strip().replace("skywater-pdk is [","")
     commit[0] = commit[0].strip().replace("]","")
-    print (commit[0])
     readmeContent = readmeContent.replace(commit[0], skywater_commit)
     makefileContent = makefileContent.replace(commit[0], skywater_commit)
     
@@ -69,7 +68,6 @@ if open_pdks_commit is not None:
         raise IOError("commit pattern not found \"skywater-pdk is\"")
     commit[0] = commit[0].strip().replace("open_pdks is [","")
     commit[0] = commit[0].strip().replace("]","")
-    print (commit[0])
     readmeContent = readmeContent.replace(commit[0], open_pdks_commit)
     makefileContent = makefileContent.replace(commit[0], open_pdks_commit)
         

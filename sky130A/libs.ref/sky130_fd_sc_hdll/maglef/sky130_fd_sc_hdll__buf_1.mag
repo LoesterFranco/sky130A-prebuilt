@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1599588227
+timestamp 1601050070
 << locali >>
 rect 0 527 29 561
 rect 63 527 121 561
@@ -19,15 +19,7 @@ rect 63 -17 121 17
 rect 155 -17 213 17
 rect 247 -17 305 17
 rect 339 -17 368 17
-<< obsli1 >>
-rect 33 341 69 493
-rect 33 307 178 341
-rect 144 278 178 307
-rect 144 212 207 278
-rect 144 161 178 212
-rect 35 127 178 161
-rect 35 51 69 127
-<< obsli1c >>
+<< viali >>
 rect 29 527 63 561
 rect 121 527 155 561
 rect 213 527 247 561
@@ -36,6 +28,14 @@ rect 29 -17 63 17
 rect 121 -17 155 17
 rect 213 -17 247 17
 rect 305 -17 339 17
+<< obsli1 >>
+rect 33 341 69 493
+rect 33 307 178 341
+rect 144 278 178 307
+rect 144 212 207 278
+rect 144 161 178 212
+rect 35 127 178 161
+rect 35 51 69 127
 << metal1 >>
 rect 0 561 368 592
 rect 0 527 29 561
@@ -60,17 +60,33 @@ rlabel locali s 213 312 279 493 6 X
 port 2 nsew signal output
 rlabel locali s 213 51 279 152 6 X
 port 2 nsew signal output
-rlabel metal1 s 0 -48 368 48 8 VGND
+rlabel viali s 305 -17 339 17 8 VGND
+port 3 nsew ground bidirectional
+rlabel viali s 213 -17 247 17 8 VGND
+port 3 nsew ground bidirectional
+rlabel viali s 121 -17 155 17 8 VGND
+port 3 nsew ground bidirectional
+rlabel viali s 29 -17 63 17 8 VGND
 port 3 nsew ground bidirectional
 rlabel locali s 105 17 179 93 6 VGND
 port 3 nsew ground bidirectional
 rlabel locali s 0 -17 368 17 8 VGND
 port 3 nsew ground bidirectional
-rlabel metal1 s 0 496 368 592 6 VPWR
+rlabel metal1 s 0 -48 368 48 8 VGND
+port 3 nsew ground bidirectional
+rlabel viali s 305 527 339 561 6 VPWR
+port 4 nsew power bidirectional
+rlabel viali s 213 527 247 561 6 VPWR
+port 4 nsew power bidirectional
+rlabel viali s 121 527 155 561 6 VPWR
+port 4 nsew power bidirectional
+rlabel viali s 29 527 63 561 6 VPWR
 port 4 nsew power bidirectional
 rlabel locali s 105 375 179 527 6 VPWR
 port 4 nsew power bidirectional
 rlabel locali s 0 527 368 561 6 VPWR
+port 4 nsew power bidirectional
+rlabel metal1 s 0 496 368 592 6 VPWR
 port 4 nsew power bidirectional
 << properties >>
 string LEFsite unithd

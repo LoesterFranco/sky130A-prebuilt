@@ -1,13 +1,8 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1599588220
+timestamp 1601050058
 << locali >>
-rect 0 527 736 561
-rect 18 451 85 527
-rect 198 455 264 527
-rect 381 455 447 527
-rect 549 455 615 527
 rect 297 307 546 349
 rect 122 199 195 265
 rect 488 165 546 307
@@ -16,11 +11,20 @@ rect 580 265 631 349
 rect 580 199 641 265
 rect 580 125 631 199
 rect 305 99 343 123
-rect 191 17 257 89
-rect 377 17 443 89
-rect 549 17 615 89
-rect 0 -17 736 17
 << obsli1 >>
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 213 561
+rect 247 527 305 561
+rect 339 527 397 561
+rect 431 527 489 561
+rect 523 527 581 561
+rect 615 527 673 561
+rect 707 527 736 561
+rect 18 451 85 527
+rect 198 455 264 527
+rect 381 455 447 527
+rect 549 455 615 527
 rect 33 383 701 417
 rect 33 265 67 383
 rect 103 300 263 349
@@ -37,9 +41,58 @@ rect 675 169 709 306
 rect 666 135 709 169
 rect 18 51 85 123
 rect 666 99 700 135
+rect 191 17 257 89
+rect 377 17 443 89
+rect 549 17 615 89
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 213 17
+rect 247 -17 305 17
+rect 339 -17 397 17
+rect 431 -17 489 17
+rect 523 -17 581 17
+rect 615 -17 673 17
+rect 707 -17 736 17
+<< obsli1c >>
+rect 29 527 63 561
+rect 121 527 155 561
+rect 213 527 247 561
+rect 305 527 339 561
+rect 397 527 431 561
+rect 489 527 523 561
+rect 581 527 615 561
+rect 673 527 707 561
+rect 29 -17 63 17
+rect 121 -17 155 17
+rect 213 -17 247 17
+rect 305 -17 339 17
+rect 397 -17 431 17
+rect 489 -17 523 17
+rect 581 -17 615 17
+rect 673 -17 707 17
 << metal1 >>
-rect 0 496 736 592
-rect 0 -48 736 48
+rect 0 561 736 592
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 213 561
+rect 247 527 305 561
+rect 339 527 397 561
+rect 431 527 489 561
+rect 523 527 581 561
+rect 615 527 673 561
+rect 707 527 736 561
+rect 0 496 736 527
+rect 0 17 736 48
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 213 17
+rect 247 -17 305 17
+rect 339 -17 397 17
+rect 431 -17 489 17
+rect 523 -17 581 17
+rect 615 -17 673 17
+rect 707 -17 736 17
+rect 0 -48 736 -17
 << labels >>
 rlabel locali s 580 265 631 349 6 A_N
 port 1 nsew signal input
@@ -57,26 +110,8 @@ rlabel locali s 305 99 343 123 6 X
 port 3 nsew signal output
 rlabel locali s 297 307 546 349 6 X
 port 3 nsew signal output
-rlabel locali s 549 17 615 89 6 VGND
-port 4 nsew ground bidirectional abutment
-rlabel locali s 377 17 443 89 6 VGND
-port 4 nsew ground bidirectional abutment
-rlabel locali s 191 17 257 89 6 VGND
-port 4 nsew ground bidirectional abutment
-rlabel locali s 0 -17 736 17 8 VGND
-port 4 nsew ground bidirectional abutment
 rlabel metal1 s 0 -48 736 48 8 VGND
 port 4 nsew ground bidirectional abutment
-rlabel locali s 549 455 615 527 6 VPWR
-port 5 nsew power bidirectional abutment
-rlabel locali s 381 455 447 527 6 VPWR
-port 5 nsew power bidirectional abutment
-rlabel locali s 198 455 264 527 6 VPWR
-port 5 nsew power bidirectional abutment
-rlabel locali s 18 451 85 527 6 VPWR
-port 5 nsew power bidirectional abutment
-rlabel locali s 0 527 736 561 6 VPWR
-port 5 nsew power bidirectional abutment
 rlabel metal1 s 0 496 736 592 6 VPWR
 port 5 nsew power bidirectional abutment
 << properties >>
