@@ -5,7 +5,7 @@
 # Revision 1	ALPHA   9/10/2020
 #-----------------------------------------------------
 
-set TECHPATH /pdks/open_pdks/sky130
+set TECHPATH /home/aag/sky130A-prebuilt/open_pdks/sky130
 if [catch {set PDKPATH}] {set PDKPATH ${TECHPATH}/sky130A}
 set PDKNAME sky130A
 # "sky130" is the namespace used for all devices

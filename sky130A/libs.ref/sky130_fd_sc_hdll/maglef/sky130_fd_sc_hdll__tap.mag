@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1601050070
+timestamp 1604502723
 << obsli1 >>
 rect 0 1071 46920 1105
 rect 388424 1071 412804 1105
@@ -16275,7 +16275,7 @@ port 2 nsew power default
 string LEFclass BLOCK
 string FIXED_BBOX -2976 -3165 415786 3725
 string LEFview TRUE
-string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hdll/gds/sky130_fd_sc_hdll.gds
+string GDS_FILE /home/aag/sky130A-prebuilt/sky130A/libs.ref/sky130_fd_sc_hdll/gds/sky130_fd_sc_hdll.gds
 string GDS_END 3646290
 string GDS_START 3609774
 << end >>

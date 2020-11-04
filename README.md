@@ -17,9 +17,12 @@ This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/
 
 # How to use:
 
-You should create a symbolic link from this folder to /pdk
+You should create a symbolic link from this folder to /tmp/pdks
 ```bash
+	git clone https://github.com/efabless/sky130A-prebuilt.git
+	cd sky130A-prebuilt
 	make link
+	export PDK_ROOT=/tmp/pdks
 ```
 Then use `$PDK_ROOT` as the absolute path where the pdk resides.
 

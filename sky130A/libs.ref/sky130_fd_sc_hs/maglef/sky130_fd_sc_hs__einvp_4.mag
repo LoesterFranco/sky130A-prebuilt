@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1601050075
+timestamp 1604502729
 << locali >>
 rect 123 424 189 547
 rect 313 424 379 547
@@ -152,7 +152,7 @@ string LEFclass CORE
 string FIXED_BBOX 0 0 1152 666
 string LEFsymmetry X Y
 string LEFview TRUE
-string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hs/gds/sky130_fd_sc_hs.gds
+string GDS_FILE /home/aag/sky130A-prebuilt/sky130A/libs.ref/sky130_fd_sc_hs/gds/sky130_fd_sc_hs.gds
 string GDS_END 2453080
 string GDS_START 2443636
 << end >>

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1601050056
+timestamp 1604502710
 << nwell >>
 rect -38 332 3302 704
 rect 1240 328 1461 332
@@ -1287,7 +1287,7 @@ flabel corelocali s 3199 316 3233 350 0 FreeSans 340 0 0 0 Q
 port 10 nsew
 << properties >>
 string FIXED_BBOX 0 0 3264 666
-string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_ms/gds/sky130_fd_sc_ms.gds
+string GDS_FILE /home/aag/sky130A-prebuilt/sky130A/libs.ref/sky130_fd_sc_ms/gds/sky130_fd_sc_ms.gds
 string GDS_END 428070
 string GDS_START 406500
 << end >>

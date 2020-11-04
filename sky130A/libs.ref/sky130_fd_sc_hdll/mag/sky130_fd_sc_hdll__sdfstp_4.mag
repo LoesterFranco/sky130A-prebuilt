@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1601050043
+timestamp 1604502697
 << nwell >>
 rect -38 261 3074 582
 << pwell >>
@@ -1249,7 +1249,7 @@ rlabel comment s 0 0 0 0 4 sdfstp_4
 flabel comment s 2303 287 2303 287 0 FreeSans 200 0 0 0 no_jumper_check
 << properties >>
 string FIXED_BBOX 0 0 3036 544
-string GDS_FILE /pdks/sky130A/libs.ref/sky130_fd_sc_hdll/gds/sky130_fd_sc_hdll.gds
+string GDS_FILE /home/aag/sky130A-prebuilt/sky130A/libs.ref/sky130_fd_sc_hdll/gds/sky130_fd_sc_hdll.gds
 string GDS_END 285408
 string GDS_START 263642
 << end >>

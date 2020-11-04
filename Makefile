@@ -13,7 +13,7 @@
 # limitations under the License.
 MAKE_ROOT ?= $(shell pwd)
 PDK_BASE ?= $(shell pwd)
-PDK_ROOT ?= /pdks
+PDK_ROOT ?= /tmp/pdks
 THREADS ?= $(shell nproc)
 STD_CELL_LIBRARY ?= sky130_fd_sc_hd
 

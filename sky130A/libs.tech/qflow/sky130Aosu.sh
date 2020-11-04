@@ -6,19 +6,19 @@
 
 # The LEF file containing standard cell macros
 
-set leffile=/pdks/sky130A/libs.ref/sky130_osu130/lef/sky130_osu130.lef
+set leffile=/home/aag/sky130A-prebuilt/sky130A/libs.ref/sky130_osu130/lef/sky130_osu130.lef
 
 # The SPICE netlist containing subcell definitions for all the standard cells
-set spicefile=/pdks/sky130A/libs.ref/sky130_osu130/spice/sky130_osu130.spice
+set spicefile=/home/aag/sky130A-prebuilt/sky130A/libs.ref/sky130_osu130/spice/sky130_osu130.spice
 
 # The liberty format file containing standard cell timing and function information
-set libertyfile=/pdks/sky130A/libs.ref/sky130_osu130/lib/sky130_osu130.lib
+set libertyfile=/home/aag/sky130A-prebuilt/sky130A/libs.ref/sky130_osu130/lib/sky130_osu130.lib
 
 # If there is another LEF file containing technology information
 # that is separate from the file containing standard cell macros,
 # set this.  Otherwise, leave it defined as an empty string.
 
-set techleffile=/pdks/sky130A/libs.ref/sky130_osu130/techLEF/sky130_osu130_tech.lef
+set techleffile=/home/aag/sky130A-prebuilt/sky130A/libs.ref/sky130_osu130/techLEF/sky130_osu130_tech.lef
 
 # All cells below should be the lowest output drive strength value,
 # if the standard cell set has multiple cells with different drive
@@ -47,12 +47,12 @@ set gndnet="vdd"		;# Name used for ground pins in standard cells
 set vddnet="vss"		;# Name used for power pins in standard cells
 
 set separator=""		;# Separator between gate names and drive strengths
-set techfile=/pdks/sky130A/libs.tech/magic/current/sky130A.tech	    ;# magic techfile
-set magicrc=/pdks/sky130A/libs.tech/magic/current/sky130A.magicrc    ;# magic startup script
+set techfile=/home/aag/sky130A-prebuilt/sky130A/libs.tech/magic/current/sky130A.tech	    ;# magic techfile
+set magicrc=/home/aag/sky130A-prebuilt/sky130A/libs.tech/magic/current/sky130A.magicrc    ;# magic startup script
 set magic_display="XR" 	;# magic display, defeat display query and OGL preference
-set netgen_setup=/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl	;# netgen setup file for LVS
-set gdsfile=/pdks/sky130A/libs.ref/sky130_osu130/gds/sky130_osu130.gds	;# GDS database of standard cells
-set verilogfile=/pdks/sky130A/libs.ref/sky130_osu130/verilog/sky130_osu130.v	;# Verilog models of standard cells
+set netgen_setup=/home/aag/sky130A-prebuilt/sky130A/libs.tech/netgen/sky130A_setup.tcl	;# netgen setup file for LVS
+set gdsfile=/home/aag/sky130A-prebuilt/sky130A/libs.ref/sky130_osu130/gds/sky130_osu130.gds	;# GDS database of standard cells
+set verilogfile=/home/aag/sky130A-prebuilt/sky130A/libs.ref/sky130_osu130/verilog/sky130_osu130.v	;# Verilog models of standard cells
 
 # Set a conditional default in the project_vars.sh file for this process
 set postproc_options=""
