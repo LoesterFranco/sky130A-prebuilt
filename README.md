@@ -8,26 +8,31 @@
 git lfs install
 ```
 
-# Sources:
+# What is this repo?
 
-This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/skywater-pdk) using [open_pdks](https://github.com/RTimothyEdwards/open_pdks), mainly for the use of [OpenLANE](https://github.com/efabless/openlane/tree/master).
+This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/skywater-pdk) using [open_pdks](https://github.com/RTimothyEdwards/open_pdks). It is structured to work with [OpenLANE](https://github.com/efabless/openlane/tree/master).
+
+# Sources:
 
 - The used commit from skywater-pdk is [bd7b0f6a274a4cec839023a5b94b5b216a8d9231](https://github.com/google/skywater-pdk/commit/bd7b0f6a274a4cec839023a5b94b5b216a8d9231)
 - The used commit from open_pdks is [48db3e1a428ae16f5d4c86e0b7679656cf8afe3d](https://github.com/RTimothyEdwards/open_pdks/commit/48db3e1a428ae16f5d4c86e0b7679656cf8afe3d)
 
-# How to use:
+# Installing sky130A-prebuilt - (for PDK designers):
 
-You should create a symbolic link from this folder to /tmp/pdks
 ```bash
 	git clone https://github.com/efabless/sky130A-prebuilt.git
 	cd sky130A-prebuilt
 	make link
 	export PDK_ROOT=/tmp/pdks
 ```
-Then use `$PDK_ROOT` as the absolute path where the pdk resides.
+and you are done
 
+# Recreating the sky130A-prebuilt - (for PDK developers):
 
-# Recreating the PDK:
+# Prerequisites to recreate:
+
+ - python3
+ - [magic](https://github.com/RTimothyEdwards/magic) - At least version 8.3.25 is required
 
 To recreate the PDK, run:
 
@@ -35,7 +40,3 @@ To recreate the PDK, run:
 	make
 ```
 
-# Prerequisites to recreate:
-
- - python3
- - [magic](https://github.com/RTimothyEdwards/magic) - At least version 8.3.25 is required
