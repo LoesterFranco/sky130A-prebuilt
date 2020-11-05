@@ -17,7 +17,7 @@ This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/
 - The used commit from skywater-pdk is [bd7b0f6a274a4cec839023a5b94b5b216a8d9231](https://github.com/google/skywater-pdk/commit/bd7b0f6a274a4cec839023a5b94b5b216a8d9231)
 - The used commit from open_pdks is [48db3e1a428ae16f5d4c86e0b7679656cf8afe3d](https://github.com/RTimothyEdwards/open_pdks/commit/48db3e1a428ae16f5d4c86e0b7679656cf8afe3d)
 
-# Installing sky130A-prebuilt - (for PDK designers):
+# Installation - for PDK designers:
 
 ```bash
 	git clone https://github.com/efabless/sky130A-prebuilt.git
@@ -27,7 +27,7 @@ This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/
 ```
 and you are done
 
-# Recreating the sky130A-prebuilt - (for PDK developers):
+# Rebuild - for PDK developers:
 
 # Prerequisites to recreate:
 
