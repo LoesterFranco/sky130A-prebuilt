@@ -9,7 +9,7 @@ This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/
 - [git-lfs](https://git-lfs.github.com/): You must download and install git-lfs from [here](https://git-lfs.github.com/), then initialize it with the following command:
 
 ```bash
-git lfs install
+	git lfs install
 ```
 
 ## Impotrant Note
