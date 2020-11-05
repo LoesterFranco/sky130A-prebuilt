@@ -13,8 +13,11 @@ This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/
 ```
 
 ## Impotrant Note
+> This repository is a submodiule of OpenLANE. If you installed / cloned OpenLANE recursively you "do not" need to come here at all.
+
 > You must install git-lfs on you environement before you start the installation step below. If you do not install and initialize git-lfs, the installation will not be complete and ready for use with design tools such as OpenLANE.
-> git-lfs initialization is user-spcecific step. Installing git-lfs the host does not initialize it for every user
+
+> git-lfs initialization is user-spcecific step. Installing git-lfs the host does not initialize it for every user.
 
 # Sources:
 
