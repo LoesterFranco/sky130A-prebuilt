@@ -26,7 +26,7 @@ This repository contains data from two specific repositories and specific hashes
 - The used commit from skywater-pdk is [bd7b0f6a274a4cec839023a5b94b5b216a8d9231](https://github.com/google/skywater-pdk/commit/bd7b0f6a274a4cec839023a5b94b5b216a8d9231)
 - The used commit from open_pdks is [48db3e1a428ae16f5d4c86e0b7679656cf8afe3d](https://github.com/RTimothyEdwards/open_pdks/commit/48db3e1a428ae16f5d4c86e0b7679656cf8afe3d)
 
-# Installation - for PDK designers:
+# PDK Installation - for designers:
 
 ```bash
 	git clone https://github.com/efabless/sky130A-prebuilt.git
@@ -36,12 +36,16 @@ This repository contains data from two specific repositories and specific hashes
 ```
 and you are done
 
-# Rebuild - for PDK developers:
+# PDK Update - for developers:
 
-# Prerequisites to recreate:
+## Prerequisites:
 
  - python3
  - [magic](https://github.com/RTimothyEdwards/magic) - At least version 8.3.25 is required
+
+## Prerequisites:
+
+#TODO - update the make fule to have an update option with hash selection for skywater-pdk and open_pdks
 
 To recreate the PDK, run:
 
