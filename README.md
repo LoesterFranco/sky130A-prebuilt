@@ -2,11 +2,15 @@
 
 # Prerequisites:
 
-- [git-lfs](https://git-lfs.github.com/): You must download and install git-lfs from [here](https://git-lfs.github.com/), then set it up once per user account by running the following command:
+- [git-lfs](https://git-lfs.github.com/): You must download and install git-lfs from [here](https://git-lfs.github.com/), then initialize it with the following command:
 
 ```bash
 git lfs install
 ```
+
+# # Impotrant Note
+> You must install git-lfs on you environement before you start the installation step below. If you do not install and initialize git-lfs, the installation will not be complete and ready for use with design tools such as OpenLANE.
+> git-lfs initialization is user-spcecific step. Installing git-lfs the host does not initialize it for every user
 
 # What is this repo?
 
