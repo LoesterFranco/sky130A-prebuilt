@@ -2,7 +2,7 @@
 
 # What is this repo?
 
-This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/skywater-pdk) using [open_pdks](https://github.com/RTimothyEdwards/open_pdks). It is structured to work with [OpenLANE](https://github.com/efabless/openlane/tree/master).
+This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/skywater-pdk) using [open_pdks](https://github.com/RTimothyEdwards/open_pdks). It is structured to work with [OpenLANE](https://github.com/efabless/openlane/tree/master), but could be used by other open-source tools.
 
 # Prerequisites:
 
@@ -13,11 +13,11 @@ This repo is a prebuilt version of the [skywater-pdk](https://github.com/google/
 ```
 
 ## Impotrant Note
-* This repository is a submodiule of OpenLANE. If you installed / cloned OpenLANE recursively you "do not" need to come here at all.
+* This repository is a submodule of OpenLANE. If you installed/cloned OpenLANE recursively you "do not" need to come here at all.
 
 * You must install git-lfs on you environement before you start the installation step below. If you do not install and initialize git-lfs, the installation will not be complete and ready for use with design tools such as OpenLANE.
 
-* git-lfs initialization is user-spcecific step. Installing git-lfs the host does not initialize it for every user.
+* git-lfs initialization is user-specific step. The host does not initialize it for every user.
 
 # Sources:
 
@@ -34,21 +34,24 @@ This repository contains data from two specific repositories and specific hashes
 	make link
 	export PDK_ROOT=/tmp/pdks
 ```
-and you are done
+You can now use $PDK_ROOT as the location where the pdk resides.
 
 # PDK Update - for developers:
 
 ## Prerequisites:
 
  - python3
- - [magic](https://github.com/RTimothyEdwards/magic) - At least version 8.3.25 is required
+ - [magic](https://github.com/RTimothyEdwards/magic) - At least version 8.3.60 is required
 
-## Prerequisites:
+## How To Re-build/Update:
 
-#TODO - update the make fule to have an update option with hash selection for skywater-pdk and open_pdks
+First, select the [skywater-pdk](https://github.com/google/skywater-pdk) and [open_pdks](https://github.com/RTimothyEdwards/open_pdks) commit hashes you want to use, and set them using the following commands:
+```bash
+	export SKYWATER_COMMIT=<a valid skywater-pdk repository commit hash>
+	export OPEN_PDKS_COMMIT=<a valid open_pdks repository commit hash>
+```
 
-To recreate the PDK, run:
-
+Then, run the following command, after installing the prerequisites
 ```bash
 	make
 ```
